@@ -20,6 +20,12 @@ class App extends Component {
     super(props)
     this.container = createRef()
     imagesLoaded(this.container, {}, this.loadingDone)
+    this.Home = createRef()
+    this.AdvancedFeatures = createRef()
+    this.Pricing = createRef()
+    this.OurClients = createRef()
+    this.OurTeam = createRef()
+    this.Contact = createRef()
   }
   state = {
     loading: true,
@@ -29,13 +35,23 @@ class App extends Component {
       loading: false
     }))
   }
+  getRefs = () => {
+    return {
+      home: this.Home,
+      advancedFeatures: this.AdvancedFeatures,
+      pricing: this.Pricing,
+      ourClients: this.OurClients,
+      ourTeam: this.OurTeam,
+      contact: this.Contact,
+    }
+  }
   render() {
     return (
       <div
         ref={this.container}
         className={`has-loading-screen ${this.state.loading ? "" : "loading-done"}`}>
         <div className="ts-page-wrapper" id="page-top">
-          <Header />
+          <Header navRefs={this.getRefs()} ref={this.Home}/>
           <main id="ts-content">
             <Benefits />
             <FriendLogos />
@@ -44,17 +60,17 @@ class App extends Component {
               center={{ title: "$3,15 M", description: "Invested" }}
               right={{ title: "14%", description: "Growth p.a." }}
               />
-            <AdvancedFeatures />
-            <Pricing />
+            <AdvancedFeatures ref={this.AdvancedFeatures} />
+            <Pricing ref={this.Pricing} />
             <Buy />
-            <OurClients />
+            <OurClients ref={this.OurClients} />
             <Suscribe />
             <Organize />
             <img className="ts-hr-skewed" src="assets/img/hr-skewed.png" />
-            <OurTeam />
+            <OurTeam ref={this.OurTeam} />
           </main>
           <footer id="ts-footer">
-            <Contact />
+            <Contact ref={this.Contact} />
             <div className="text-center text-white pb-5" data-bg-color="#000">
               <small>© 2018 MedicineHub, All Rights Reserved</small>
             </div>

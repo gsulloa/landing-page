@@ -38,7 +38,7 @@ class Header extends Component {
         data-bg-parallax="scroll"
         data-bg-parallax-speed="3"
       >
-        <NavBar />
+        <NavBar navRefs={this.props.navRefs}/>
         
         <div className="container align-self-center align-items-center">
           <div className="row">
