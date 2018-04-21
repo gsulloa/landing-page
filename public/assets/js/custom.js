@@ -13,17 +13,12 @@ function onChange($) {
     console.log("change")
 
 	$('.navbar-nav .nav-link').on('click', function(){
-        debugger
 		$('.navbar-collapse').collapse('hide');
 	});
 
-    $(".ts-img-into-bg").each(function() {
-        $(this).css("background-image", "url("+ $(this).find("img").attr("src") +")" );
-    });
-
 //  Background
 
-    $("[data-bg-color], [data-bg-image], [data-bg-particles]").each(function() {
+    $("[data-bg-color], [data-bg-image]").each(function() {
         var $this = $(this);
 
         if( $this.hasClass("ts-separate-bg-element") ){
@@ -33,25 +28,6 @@ function onChange($) {
 
             if( $("[data-bg-color]") ){
                 $this.find(".ts-background").css("background-color", $this.attr("data-bg-color") );
-            }
-
-            // Particles
-
-            if( $this.attr("data-bg-particles-line-color") || $this.attr("data-bg-particles-dot-color") ){
-                $this.find(".ts-background").append('<div class="ts-background-particles">');
-                $(".ts-background-particles").each(function () {
-                    var lineColor = $this.attr("data-bg-particles-line-color");
-                    var dotColor = $this.attr("data-bg-particles-dot-color");
-                    var parallax = $this.attr("data-bg-particles-parallax");
-                    $(this).particleground({
-                        density: 15000,
-                        lineWidth: 0.2,
-                        lineColor: lineColor,
-                        dotColor: dotColor,
-                        parallax: parallax,
-                        proximity: 200
-                    });
-                });
             }
 
             // Background Image

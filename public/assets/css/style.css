@@ -326,7 +326,7 @@ B. Helpers
     width: 100%;
 }
 
-.ts-background-image, .ts-img-into-bg {
+.ts-background-image {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -335,7 +335,7 @@ B. Helpers
     width: 100%;
 }
 
-.ts-background-image img, .ts-img-into-bg img {
+.ts-background-image img {
     display: none;
 }
 

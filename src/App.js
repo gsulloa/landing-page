@@ -54,7 +54,6 @@ class App extends Component {
             <OurTeam />
           </main>
           <footer id="ts-footer">
-            <div className="map ts-height__600px" id="map" data-mask-top-nw-color="#fff" data-mask-bottom-wn-color="#1f1f1f"></div>
             <Contact />
             <div className="text-center text-white pb-5" data-bg-color="#000">
               <small>© 2018 MedicineHub, All Rights Reserved</small>

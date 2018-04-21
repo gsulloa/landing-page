@@ -32,7 +32,7 @@ class Header extends Component {
         id="ts-hero"
         className="ts-separate-bg-element"
         data-mask-bottom-wn-color="#fff"
-        data-bg-image="assets/img/bg.jpg"
+        data-bg-image="assets/img/bg-girl-02.jpg"
         data-bg-color="#737373"
         data-bg-image-opacity=".8"
         data-bg-parallax="scroll"
