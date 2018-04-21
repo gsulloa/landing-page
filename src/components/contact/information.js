@@ -4,7 +4,7 @@ class Information extends Component {
   render = () => {
     const { address, addressExtra, email, phone, skype } = this.props
     return ([
-      <h3 key="title">Contact Us</h3>,
+      <h3 key="title">Contáctanos</h3>,
       <address key="information">
         <figure>  
           {address}
@@ -20,8 +20,12 @@ class Information extends Component {
           <div className="font-weight-bold">Phone:</div>
           {phone}
         </figure>
-        <div className="font-weight-bold">Skype:</div>
-        {skype}
+        {skype ? (
+          [<div className="font-weight-bold">Skype:</div>,
+          {skype}]
+        ) :(
+          null
+        )}
       </address>
     ])
   }

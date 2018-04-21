@@ -6,7 +6,7 @@ import Phone from "./phone"
 class Organize extends Component {
   render = () => {
     return (
-      <section id="organize" className="ts-block pt-5">
+      <section id="organize" className="ts-block ts-block-no-padding pt-5">
         <div className="container">
           <div className="ts-title text-center">
             <h2>Organize Everything!</h2>

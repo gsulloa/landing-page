@@ -34,21 +34,23 @@ class Header extends Component {
         data-mask-bottom-wn-color="#fff"
         data-bg-image="assets/img/bg.jpg"
         data-bg-color="#737373"
-        data-bg-image-opacity=".8"
+        data-bg-image-opacity=".5"
         data-bg-parallax="scroll"
-        data-bg-parallax-speed="3"
+        data-bg-parallax-speed="1"
       >
         <NavBar navRefs={this.props.navRefs}/>
         
         <div className="container align-self-center align-items-center">
           <div className="row">
-            <div className="col-md-6">
-              <h1>MedicineHub</h1>
-              <h3 className="ts-opacity__50">El repositorio de contenido digital de medicina</h3>
+            <div className="col-md-8">
+              <h2>Software de apoyo a la enseñanza de Anatomía líder en sudamérica</h2>
+              <h4 className="ts-opacity__80">
+              Accede al mayor repositorio de recursos anatómicos en 3D y en Realidad Virtual de sudamérica. Experimenta el aprendizaje de Anatomía como nunca antes.
+              </h4>
             </div>
           </div>
           <a href="#what-youll-get" className="btn btn-primary ts-scroll">Conoce más</a>
-          <a href="https://vimeo.com/63502573" className="btn btn-outline-light video-popup">
+          <a href="https://www.youtube.com/watch?v=qpxzRZYd5d8" className="btn btn-outline-light video-popup">
             <i className="fa fa-play mr-2"></i>
             Video
           </a>

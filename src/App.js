@@ -62,12 +62,12 @@ class App extends Component {
               />
             <AdvancedFeatures ref={this.AdvancedFeatures} />
             <Pricing ref={this.Pricing} />
-            <Buy />
+            {/* <Buy />
             <OurClients ref={this.OurClients} />
-            <Suscribe />
-            <Organize />
-            <img className="ts-hr-skewed" src="assets/img/hr-skewed.png" />
-            <OurTeam ref={this.OurTeam} />
+            <Suscribe /> */}
+            {/* <Organize /> */}
+            {/* <img className="ts-hr-skewed" src="assets/img/hr-skewed.png" />
+            <OurTeam ref={this.OurTeam} /> */}
           </main>
           <footer id="ts-footer">
             <Contact ref={this.Contact} />

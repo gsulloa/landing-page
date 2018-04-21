@@ -5,7 +5,7 @@ class Phone extends Component {
     return (
       <div className="col-md-4 my-5 d-flex justify-content-center align-items-center">
         <div className="image position-relative">
-          <img src="assets/img/img-phone.png" className="mw-100" alt="" data-animate="ts-zoomInShort" data-delay=".1s"/>
+          <img src="assets/img/img-phone.jpg" className="mw-100" alt="" data-animate="ts-zoomInShort" data-delay=".1s"/>
         </div>
       </div>
     )

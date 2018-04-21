@@ -32,7 +32,7 @@ class Feature extends Component {
       this.renderPhoto()
     ]
     return (
-      <section id="advanced-features" className="ts-block">
+      <section id="advanced-features" className="ts-block ts-block-no-padding">
         <div className="container">
           <div className="row">
             {data[i % 2]}

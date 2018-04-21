@@ -10,11 +10,10 @@ class Contact extends Component {
           <div className="row">
               <div className="col-md-4">
                 <Information
-                  address="2590 Rocky Road"
-                  addressExtra="Philadelphia, PA 19108"
-                  email="office@example.com"
+                  address="Vicuña Mackena #4860"
+                  addressExtra="Macul, Santiago"
+                  email="medhub@ing.puc.cl"
                   phone="+1 215-606-0391"
-                  skype="startups.agency"
                 />
               </div>
               <div className="col-md-8">

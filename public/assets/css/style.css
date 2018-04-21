@@ -128,6 +128,15 @@ h6, .ts-h6 {
 }
 
 /* NEW */
+@font-face {
+    font-family: "specify-black";
+    src: url(../font/Specify-normal-black.ttf);
+}
+
+.logo {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+}
 
 /***********************************************************************************************************************
 B. Helpers
@@ -877,8 +886,8 @@ C. Components
 -------------------------------------------*/
 
 .ts-block {
-    padding-bottom: 5rem;
-    padding-top: 5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
     position: relative;
     /*
   &:after {
@@ -2419,4 +2428,8 @@ E. Template Specific Elements
     .ts-carousel-centered .owl-nav .owl-prev {
         left: 2.5rem;
     }
+}
+
+.ts-block-no-padding {
+    padding: 1rem;
 }
