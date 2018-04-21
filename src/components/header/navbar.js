@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import scrollToComponent from "react-scroll-to-component"
 
 import MenuItem from "./menuItem"
 
@@ -18,12 +17,12 @@ class NavBar extends Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav ml-auto">
-              <MenuItem onClick={() => scrollToComponent(navRefs.home.current)} className="active" href="#page-top">Home <span className="sr-only">(current)</span></MenuItem>
-              <MenuItem onClick={() => scrollToComponent(navRefs.advancedFeatures.current)} href="#advanced-features">Features</MenuItem>
-              <MenuItem onClick={() => scrollToComponent(navRefs.pricing.current)} href="#pricing">Pricing</MenuItem>
-              <MenuItem onClick={() => scrollToComponent(navRefs.ourClients.current)} href="#our-clients">Our Clients</MenuItem>
-              <MenuItem onClick={() => scrollToComponent(navRefs.ourTeam.current)} href="#our-team">Team</MenuItem>
-              <MenuItem onClick={() => scrollToComponent(navRefs.contact.current)} href="#form-contact">Contact</MenuItem>
+              <MenuItem component={navRefs.home.current} className="active" href="#page-top">Home <span className="sr-only">(current)</span></MenuItem>
+              <MenuItem component={navRefs.advancedFeatures.current} href="#advanced-features">Features</MenuItem>
+              <MenuItem component={navRefs.pricing.current} href="#pricing">Pricing</MenuItem>
+              <MenuItem component={navRefs.ourClients.current} href="#our-clients">Our Clients</MenuItem>
+              <MenuItem component={navRefs.ourTeam.current} href="#our-team">Team</MenuItem>
+              <MenuItem component={navRefs.contact.current} href="#form-contact">Contact</MenuItem>
               <a className="btn btn-outline-light btn-sm m-1 px-3 ts-width__auto" href="#">
                 <i className="fas fa-sign-in-alt ts-opacity__80 pr-2"></i>
                 Log In
