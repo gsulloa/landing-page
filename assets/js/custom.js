@@ -12,26 +12,13 @@ function onChange($) {
     "use strict";
     console.log("change")
 
-    $("body").imagesLoaded( function() {
-        $("body").addClass("loading-done");
-        var $animatedWaves = $(".ts-animated-waves");
-        $animatedWaves.css("transform", "translateX( calc( -100% + " + ($(window).width()+5)  + "px )" );
-        $animatedWaves.on("transitionend webkitTransitionEnd oTransitionEnd", function(){
-            $(this).toggleClass("repeat");
-        });
-    });
-
 	$('.navbar-nav .nav-link').on('click', function(){
 		$('.navbar-collapse').collapse('hide');
 	});
 
-    $(".ts-img-into-bg").each(function() {
-        $(this).css("background-image", "url("+ $(this).find("img").attr("src") +")" );
-    });
-
 //  Background
 
-    $("[data-bg-color], [data-bg-image], [data-bg-particles]").each(function() {
+    $("[data-bg-color], [data-bg-image]").each(function() {
         var $this = $(this);
 
         if( $this.hasClass("ts-separate-bg-element") ){
@@ -41,25 +28,6 @@ function onChange($) {
 
             if( $("[data-bg-color]") ){
                 $this.find(".ts-background").css("background-color", $this.attr("data-bg-color") );
-            }
-
-            // Particles
-
-            if( $this.attr("data-bg-particles-line-color") || $this.attr("data-bg-particles-dot-color") ){
-                $this.find(".ts-background").append('<div class="ts-background-particles">');
-                $(".ts-background-particles").each(function () {
-                    var lineColor = $this.attr("data-bg-particles-line-color");
-                    var dotColor = $this.attr("data-bg-particles-dot-color");
-                    var parallax = $this.attr("data-bg-particles-parallax");
-                    $(this).particleground({
-                        density: 15000,
-                        lineWidth: 0.2,
-                        lineColor: lineColor,
-                        dotColor: dotColor,
-                        parallax: parallax,
-                        proximity: 200
-                    });
-                });
             }
 
             // Background Image
@@ -425,15 +393,12 @@ function onChange($) {
 // Do after resize
 
 function doneResizing(){
-    heroHeight();
     $(".owl-carousel").trigger('next.owl.carousel');
 }
 
 // Set Hero height
 
-function heroHeight(){
-    $(".ts-full-screen").height( $(window).height() );
-}
+
 
 // Smooth Scroll
 
