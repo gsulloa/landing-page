@@ -40,9 +40,9 @@ class App extends Component {
             <Benefits />
             <FriendLogos />
             <Growth
-              left={{ title: "1,200+", description: "Clients" }}
-              center={{ title: "$3,15 M", description: "Invested" }}
-              right={{ title: "14%", description: "Growth p.a." }}
+              left={{ title: "1,200+", description: "Usuarios" }}
+              center={{ title: "10+", description: "Organizaciones" }}
+              right={{ title: "200+", description: "Atlases" }}
               />
             <AdvancedFeatures />
             <Pricing />

@@ -8,21 +8,21 @@ class Benefits extends Component {
       <section id="what-youll-get" className="ts-block text-center pt-4">
         <div className="container">
             <div className="ts-title">
-              <h2>What You’ll Get</h2>
+              <h2>¿Qué entregamos?</h2>
             </div>
             <div className="row">
               <Benefit
-                title="Monitor Your Activity"
-                description="Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis"
-                icon="assets/img/icon-chart.png"
-              />
-              <Benefit
-                title="Analyze Your Results"
+                title="Atlases con alto contenido digital"
                 description="Curabitur tellus enim, aliquet et porttitor id, accumsan at nulla. Praesent vestibulum"
                 icon="assets/img/icon-target.png"
               />
               <Benefit
-                title="Get Better!"
+                title="Modelos 3D de alta fidelidad"
+                description="Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis"
+                icon="assets/img/icon-chart.png"
+              />
+              <Benefit
+                title="Visualización del contenido con AR"
                 description="In non turpis convallis nunc fermentum porttitor sed quis sapien. Etiam et neque"
                 icon="assets/img/icon-first.png"
               />
