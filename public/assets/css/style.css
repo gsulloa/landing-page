@@ -147,11 +147,11 @@ B. Helpers
 -------------------------------------------*/
 
 [data-animate] {
-    /*
+    
   opacity: 0;
   animation-fill-mode: forwards;
-  animation-duration: 1s;
-  */
+  animation-duration: 2s;
+ 
 }
 
 /* Fade In Up */
