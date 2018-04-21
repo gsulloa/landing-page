@@ -1387,7 +1387,7 @@ ul.ts-list-divided li:last-child {
   -- Loading Screen
 -------------------------------------------*/
 
-body.has-loading-screen:before {
+.has-loading-screen:before {
     background-color: #000;
     content: "";
     height: 100%;
@@ -1400,7 +1400,7 @@ body.has-loading-screen:before {
     opacity: 1;
 }
 
-body.has-loading-screen:after {
+.has-loading-screen:after {
     content: url("../../assets/img/loading.svg");
     height: 2.5rem;
     width: 2.5rem;
@@ -1416,11 +1416,11 @@ body.has-loading-screen:after {
     z-index: 10000;
 }
 
-body.has-loading-screen.loading-done:before {
+.has-loading-screen.loading-done:before {
     width: 0;
 }
 
-body.has-loading-screen.loading-done:after {
+.has-loading-screen.loading-done:after {
     transform: scale(0);
     opacity: 0;
 }
