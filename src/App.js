@@ -24,12 +24,6 @@ class App extends Component {
   state = {
     loading: true,
   }
-  componentDidMount = () => { 
-    if( document.getElementsByClassName("ts-full-screen").length ) {
-      document.getElementsByClassName("ts-full-screen")[0].style.height = window.innerHeight + "px";
-    }
-  }
-
   loadingDone = () => {
     this.setState(state => ({
       loading: false
