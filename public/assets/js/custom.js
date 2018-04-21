@@ -13,6 +13,7 @@ function onChange($) {
     console.log("change")
 
 	$('.navbar-nav .nav-link').on('click', function(){
+        debugger
 		$('.navbar-collapse').collapse('hide');
 	});
 
@@ -416,7 +417,6 @@ function onChange($) {
 // Do after resize
 
 function doneResizing(){
-    heroHeight();
     $(".owl-carousel").trigger('next.owl.carousel');
 }
 
