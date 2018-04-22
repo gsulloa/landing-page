@@ -1,7 +1,6 @@
 import React, { Component, createRef } from "react"
 import imagesLoaded from "imagesloaded"
 
-
 import Header from "./components/header"
 import Benefits from "./components/benefits"
 import FriendLogos from "./components/friendsLogos"
@@ -10,10 +9,10 @@ import AdvancedFeatures from "./components/advancedFeatures"
 import Pricing from "./components/pricing"
 import Buy from "./components/buy"
 import OurClients from "./components/ourClients"
-import Suscribe from "./components/suscribe";
-import Organize from "./components/organize";
+import Suscribe from "./components/suscribe"
+import Organize from "./components/organize"
 import OurTeam from "./components/ourTeam"
-import Contact from "./components/contact";
+import Contact from "./components/contact"
 
 class App extends Component {
   constructor(props) {
@@ -31,8 +30,8 @@ class App extends Component {
     loading: true,
   }
   loadingDone = () => {
-    this.setState(state => ({
-      loading: false
+    this.setState(() => ({
+      loading: false,
     }))
   }
   getRefs = () => {
@@ -49,9 +48,12 @@ class App extends Component {
     return (
       <div
         ref={this.container}
-        className={`has-loading-screen ${this.state.loading ? "" : "loading-done"}`}>
+        className={`has-loading-screen ${
+          this.state.loading ? "" : "loading-done"
+        }`}
+      >
         <div className="ts-page-wrapper" id="page-top">
-          <Header navRefs={this.getRefs()} ref={this.Home}/>
+          <Header navRefs={this.getRefs()} ref={this.Home} />
           <main id="ts-content">
             <Benefits />
             <FriendLogos />
@@ -59,7 +61,7 @@ class App extends Component {
               left={{ title: "1,200+", description: "Clients" }}
               center={{ title: "$3,15 M", description: "Invested" }}
               right={{ title: "14%", description: "Growth p.a." }}
-              />
+            />
             <AdvancedFeatures ref={this.AdvancedFeatures} />
             <Pricing ref={this.Pricing} />
             <Buy />
@@ -75,10 +77,10 @@ class App extends Component {
               <small>© 2018 MedicineHub, All Rights Reserved</small>
             </div>
           </footer>
+        </div>
       </div>
-    </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

@@ -8,7 +8,7 @@ class Header extends Component {
     this.header = createRef()
   }
   state = {
-    windowHeight: 0
+    windowHeight: 0,
   }
   componentWillMount = () => {
     window.addEventListener("resize", this.resizeHeader)
@@ -38,8 +38,8 @@ class Header extends Component {
         data-bg-parallax="scroll"
         data-bg-parallax-speed="3"
       >
-        <NavBar navRefs={this.props.navRefs}/>
-        
+        <NavBar navRefs={this.props.navRefs} />
+
         <div className="container align-self-center align-items-center">
           <div className="row">
             <div className="col-md-6">
@@ -47,9 +47,14 @@ class Header extends Component {
               <h1>Startup Landing Page Pack</h1>
             </div>
           </div>
-          <a href="#what-youll-get" className="btn btn-primary ts-scroll">Learn More</a>
-          <a href="https://vimeo.com/63502573" className="btn btn-outline-light video-popup">
-            <i className="fa fa-play mr-2"></i>
+          <a href="#what-youll-get" className="btn btn-primary ts-scroll">
+            Learn More
+          </a>
+          <a
+            href="https://vimeo.com/63502573"
+            className="btn btn-outline-light video-popup"
+          >
+            <i className="fa fa-play mr-2" />
             Video
           </a>
         </div>

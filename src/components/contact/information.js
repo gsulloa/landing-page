@@ -3,15 +3,15 @@ import React, { Component } from "react"
 class Information extends Component {
   render = () => {
     const { address, addressExtra, email, phone, skype } = this.props
-    return ([
+    return [
       <h3 key="title">Contact Us</h3>,
       <address key="information">
-        <figure>  
+        <figure>
           {address}
-          <br/>
+          <br />
           {addressExtra}
         </figure>
-        <br/>
+        <br />
         <figure>
           <div className="font-weight-bold">Email:</div>
           <a href="#">{email}</a>
@@ -22,8 +22,8 @@ class Information extends Component {
         </figure>
         <div className="font-weight-bold">Skype:</div>
         {skype}
-      </address>
-    ])
+      </address>,
+    ]
   }
 }
 

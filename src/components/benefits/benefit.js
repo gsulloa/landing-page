@@ -8,7 +8,11 @@ class Benefit extends Component {
         <figure data-animate="ts-fadeInUp">
           <figure className="icon mb-5 p-2">
             <img src={icon} alt="" />
-            <div className="ts-svg" data-animate="ts-zoomInShort" data-bg-image="assets/svg/organic-shape-01.svg"></div>
+            <div
+              className="ts-svg"
+              data-animate="ts-zoomInShort"
+              data-bg-image="assets/svg/organic-shape-01.svg"
+            />
           </figure>
           <h4>{title}</h4>
           <p>{description}</p>

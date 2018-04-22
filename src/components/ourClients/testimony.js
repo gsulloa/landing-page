@@ -5,7 +5,7 @@ class Testimony extends Component {
     const { photo, text, name, occupation } = this.props
     return (
       <blockquote className="blockquote">
-        <div className="ts-circle__lg" data-bg-image={photo}></div>
+        <div className="ts-circle__lg" data-bg-image={photo} />
         <p>{text}</p>
         <footer className="blockquote-footer">
           <h4>{name}</h4>
