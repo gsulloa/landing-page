@@ -1,33 +1,31 @@
 import React, { Component } from "react"
-import Member from "./member";
+import PropTypes from "prop-types"
+import Member from "./member"
 
 class OurTeam extends Component {
+  static propTypes = {
+    title: PropTypes.string,
+    members: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string,
+        occupation: PropTypes.string,
+        photo: PropTypes.string,
+      })
+    ),
+  }
   render = () => {
+    const { title, members } = this.props
     return (
       <section id="our-team" className="ts-block text-center">
         <div className="container">
-            <div className="ts-title">
-                <h2>Our Team</h2>
-            </div>
-            <div className="row">
-              <Member
-                name="Jane Dow"
-                occupation="Company CEO"
-                photo="assets/img/person-01.jpg"
-              />
-              <Member
-                name="Peter Daniels"
-                occupation="Marketing"
-                photo="assets/img/person-02.jpg"
-              />
-              <Member
-                name="Suzane Smith"
-                occupation="Support Team"
-                photo="assets/img/person-03.jpg"
-              />
-            </div>
+          <div className="ts-title">
+            <h2>{title}</h2>
+          </div>
+          <div className="row">
+            {members.map((member, i) => <Member key={i} {...member} />)}
+          </div>
         </div>
-    </section>
+      </section>
     )
   }
 }

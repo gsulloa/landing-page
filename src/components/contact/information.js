@@ -1,17 +1,25 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 
 class Information extends Component {
+  static propTypes = {
+    address: PropTypes.string,
+    addressExtra: PropTypes.string,
+    email: PropTypes.string,
+    phone: PropTypes.string,
+    skype: PropTypes.string,
+  }
   render = () => {
     const { address, addressExtra, email, phone, skype } = this.props
-    return ([
+    return [
       <h3 key="title">Contáctanos</h3>,
       <address key="information">
-        <figure>  
+        <figure>
           {address}
-          <br/>
+          <br />
           {addressExtra}
         </figure>
-        <br/>
+        <br />
         <figure>
           <div className="font-weight-bold">Email:</div>
           <a href="#">{email}</a>
@@ -20,14 +28,16 @@ class Information extends Component {
           <div className="font-weight-bold">Phone:</div>
           {phone}
         </figure>
-        {skype ? (
-          [<div className="font-weight-bold">Skype:</div>,
-          {skype}]
-        ) :(
-          null
-        )}
-      </address>
-    ])
+        {skype
+          ? [
+              <div key="label" className="font-weight-bold">
+                Skype:
+              </div>,
+              <div key="value">{skype}</div>,
+            ]
+          : null}
+      </address>,
+    ]
   }
 }
 

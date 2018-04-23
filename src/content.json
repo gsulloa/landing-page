@@ -1,0 +1,234 @@
+[
+  {
+    "lang": "es",
+    "advancedFeatures": {
+      "features": [
+        {
+          "title": "Que es MedicineHub",
+          "description": "Utilizamos las últimas tecnologías para poder entregar los mejores recursos anatómicos en 3D y en Realidad Virtual para apoyar el aprendizaje de anatomía.",
+          "elements": [
+            "Presente en dispositivos moviles y Web",
+            "Contenido autoexplicativo para mejorar la experiencia de aprendizaje"
+          ],
+          "photo": "assets/img/image-device-01.png"
+        },
+        {
+          "title": "Modelos 3D con Realidad Aumentada",
+          "description": "Todo los modelos anatómicos presentes, cuentan con visualización en Realidad Aumentada, y presentan toda la información relevante al respecto.",
+          "elements": [
+            "Usa tu smartphone para poder acceder a las mejores visualizaciones",
+            "Maximiza tu experiencia de aprendizaje"
+          ],
+          "photo": "assets/img/ar.jpg"
+        }
+      ]
+    },
+    "benefits": {
+      "title": "¿Qué entregamos?",
+      "elements": [
+        {
+          "title": "Recursos anatómicos digitales",
+          "description": "Gran variedad de recursos anatómicos, que incluye contenido de aprendizaje en videos, imagenes, modelos 3D y más.",
+          "icon": "assets/img/icon-chart.png"
+        },
+        {
+          "title": "Modelos 3D de alta fidelidad",
+          "description": "Todos nuestros modelos 3D se construyeron con tecnologías de alta presición, y con posibilidad de visualizar con Realidad Virtual.",
+          "icon": "assets/img/icon-target.png"
+        },
+        {
+          "title": "Paga sólo lo que usas",
+          "description": "Nuestro modelo de negocios no incluye una mensualidad, solo debes pagar por los contenidos específicos que usas y no por todo nuestro contenido",
+          "icon": "assets/img/icon-first.png"
+        }
+      ]
+    },
+    "buy": {
+      "title": "Buy The StartUps Now!",
+      "description": "Curabitur tellus enim, aliquet et porttitor id suspendisse tempor turpis mattis",
+      "button": "Buy Now!"
+    },
+    "contact": {
+      "backgroundPhoto": "assets/img/bg-desk.jpg",
+      "information": {
+        "address": "Vicuña Mackena #4860",
+        "addressExtra": "Macul, Santiago",
+        "email": "medhub@ing.puc.cl",
+        "phone": "+1 215-606-0391",
+        "skype": "startups.agency"
+      },
+      "form": {
+        "title": "Formulario de Contacto",
+        "name": {
+          "title": "Tu nombre *",
+          "placeholder": "Tu nombre"
+        },
+        "email": {
+          "title": "Tu email *",
+          "placeholder": "Tu email"
+        },
+        "message": {
+          "title": "Tu mensaje *",
+          "placeholder": "Tu mensaje"
+        },
+        "button": "Enviar"
+      }
+    },
+    "friendsLogos": {
+      "logos": [
+        "assets/img/ing-uc.png",
+        "assets/img/med-uc.png"
+      ]
+    },
+    "growth": {
+      "backgroundPhoto": "assets/img/bg.jpg",
+      "data": [
+        { "title": "1,200+", "description": "Usuarios" },
+        { "title": "10+", "description": "Organizaciones" },
+        { "title": "200+", "description": "Atlases" }
+      ]
+    },
+    "header": {
+      "title": "Software de apoyo a la enseñanza de Anatomía líder en sudamérica",
+      "subtitle": "Accede al mayor repositorio de recursos anatómicos en 3D y en Realidad Virtual de sudamérica. Experimenta el aprendizaje de Anatomía como nunca antes.",
+      "learn": "Conoce Más",
+      "video": {
+        "button": "Video",
+        "href":"https://vimeo.com/63502573"
+      },
+      "backgroundPhoto": "assets/img/bg.jpg"
+    },
+    "organize": {
+      "title": "Organize Everything!",
+      "left": [
+        {
+          "photo": "assets/img/icon-target.png",
+          "title": "Monitor Your Activity",
+          "description": "Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis"
+        },
+        {
+          "photo": "assets/img/icon-target.png",
+          "title": "Analyze Your Results",
+          "description": "Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis"
+        },
+        {
+          "photo": "assets/img/icon-target.png",
+          "title": "Get Better!",
+          "description": "Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis"
+        }
+      ],
+      "right": [
+        {
+          "photo":"assets/img/icon-target.png",
+          "title":"Support Chat",
+          "description":"Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis"
+        },
+        {
+          "photo":"assets/img/icon-map.png",
+          "title":"Runs on Any Place",
+          "description":"Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis"
+        },
+        {
+          "photo":"assets/img/icon-video.png",
+          "title":"Video Tutorials",
+          "description":"Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis"
+        }
+      ]
+    },
+    "ourClients": {
+      "title": "Our Clients",
+      "testimonies": [
+        {
+          "text":"Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis nibh posuere. Aenean sagittis nisl. uthicula sagitti",
+          "name":"Jane Doe",
+          "occupation":"CEO at MarketsGuru",
+          "photo":"assets/img/person-05.jpg"
+        },
+        {
+          "text":"Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis nibh posuere. Aenean sagittis nisl. uthicula sagitti",
+          "name":"Jane Doe",
+          "occupation":"CEO at MarketsGuru",
+          "photo":"assets/img/person-05.jpg"
+        },
+        {
+          "text":"Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis nibh posuere. Aenean sagittis nisl. uthicula sagitti",
+          "name":"Jane Doe",
+          "occupation":"CEO at MarketsGuru",
+          "photo":"assets/img/person-05.jpg"
+        },
+        {
+          "text":"Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis nibh posuere. Aenean sagittis nisl. uthicula sagitti",
+          "name":"Jane Doe",
+          "occupation":"CEO at MarketsGuru",
+          "photo":"assets/img/person-05.jpg"
+        }
+      ]
+    },
+    "ourTeam": {
+      "title": "Our Team",
+      "members": [
+        {
+          "name": "Jane Dow",
+          "occupation": "Company CEO",
+          "photo": "assets/img/person-01.jpg"
+        },
+        {
+          "name": "Peter Daniels",
+          "occupation": "Marketing",
+          "photo": "assets/img/person-02.jpg"
+        },
+        {
+          "name": "Suzane Smith",
+          "occupation": "Support Team",
+          "photo": "assets/img/person-03.jpg"
+        }
+      ]
+    },
+    "pricing": {
+      "backgroundPhoto": "assets/img/bg.jpg",
+      "title": "Precios Accesibles",
+      "options": [
+        {
+          "title": "Brazo",
+          "price": "$1,00",
+          "photo": "assets/img/icon-map.png"
+        },
+        {
+          "title": "Pierna",
+          "price": "$5,00",
+          "photo": "assets/img/icon-map.png"
+        },
+        {
+          "title": "Torax",
+          "price": "$3,00",
+          "photo": "assets/img/icon-map.png"
+        },
+        {
+          "title": "Antebrazo",
+          "price": "$1,00",
+          "photo": "assets/img/icon-map.png"
+        },
+        {
+          "title": "Cuello",
+          "price": "$10,00",
+          "photo": "assets/img/icon-map.png"
+        },
+        {
+          "title": "Mano",
+          "price": "$1,00",
+          "photo": "assets/img/icon-map.png"
+        }
+      ]
+    },
+    "suscribe": {
+      "backgroundPhoto": "assets/img/bg-girl-book.jpg",
+      "title": "Suscribete a las útlimas noticias!",
+      "email": {
+        "title": "Email",
+        "placeholder": ""
+      },
+      "description": "*Sólo recibiras información importante una vez a la semana",
+      "submit": "Enviar"
+    }
+  }
+]

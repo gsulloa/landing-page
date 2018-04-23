@@ -1,7 +1,6 @@
 import React, { Component, createRef } from "react"
 import imagesLoaded from "imagesloaded"
 
-
 import Header from "./components/header"
 import Benefits from "./components/benefits"
 import FriendLogos from "./components/friendsLogos"
@@ -10,10 +9,12 @@ import AdvancedFeatures from "./components/advancedFeatures"
 import Pricing from "./components/pricing"
 import Buy from "./components/buy"
 import OurClients from "./components/ourClients"
-import Suscribe from "./components/suscribe";
-import Organize from "./components/organize";
+import Suscribe from "./components/suscribe"
+import Organize from "./components/organize"
 import OurTeam from "./components/ourTeam"
-import Contact from "./components/contact";
+import Contact from "./components/contact"
+
+import contentJSON from "./content"
 
 class App extends Component {
   constructor(props) {
@@ -31,8 +32,8 @@ class App extends Component {
     loading: true,
   }
   loadingDone = () => {
-    this.setState(state => ({
-      loading: false
+    this.setState(() => ({
+      loading: false,
     }))
   }
   getRefs = () => {
@@ -46,39 +47,46 @@ class App extends Component {
     }
   }
   render() {
+    const content = contentJSON[0]
     return (
       <div
         ref={this.container}
-        className={`has-loading-screen ${this.state.loading ? "" : "loading-done"}`}>
+        className={`has-loading-screen ${
+          this.state.loading ? "" : "loading-done"
+        }`}
+      >
         <div className="ts-page-wrapper" id="page-top">
-          <Header navRefs={this.getRefs()} ref={this.Home}/>
+          <Header
+            navRefs={this.getRefs()}
+            ref={this.Home}
+            {...content.header}
+          />
           <main id="ts-content">
-            <Benefits />
-            <FriendLogos />
-            <Growth
-              left={{ title: "1,200+", description: "Usuarios" }}
-              center={{ title: "10+", description: "Organizaciones" }}
-              right={{ title: "200+", description: "Atlases" }}
-              />
-            <AdvancedFeatures ref={this.AdvancedFeatures} />
-            <Pricing ref={this.Pricing} />
-            {/* <Buy />
-            <OurClients ref={this.OurClients} />
-            <Suscribe /> */}
-            {/* <Organize /> */}
-            {/* <img className="ts-hr-skewed" src="assets/img/hr-skewed.png" />
-            <OurTeam ref={this.OurTeam} /> */}
+            <Benefits {...content.benefits} />
+            <FriendLogos {...content.friendsLogos} />
+            <Growth {...content.growth} />
+            <AdvancedFeatures
+              ref={this.AdvancedFeatures}
+              {...content.advancedFeatures}
+            />
+            <Pricing ref={this.Pricing} {...content.pricing} />
+            <Buy {...content.buy} />
+            <OurClients ref={this.OurClients} {...content.ourClients} />
+            <Suscribe {...content.suscribe} />
+            <Organize {...content.organize} />
+            <img className="ts-hr-skewed" src="assets/img/hr-skewed.png" />
+            <OurTeam ref={this.OurTeam} {...content.ourTeam} />
           </main>
           <footer id="ts-footer">
-            <Contact ref={this.Contact} />
+            <Contact ref={this.Contact} {...content.contact} />
             <div className="text-center text-white pb-5" data-bg-color="#000">
               <small>© 2018 MedicineHub, All Rights Reserved</small>
             </div>
           </footer>
+        </div>
       </div>
-    </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

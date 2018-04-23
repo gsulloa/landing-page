@@ -1,54 +1,44 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 
 import Content from "./content"
 import Phone from "./phone"
 
 class Organize extends Component {
+  static propTypes = {
+    title: PropTypes.string,
+    left: PropTypes.arrayOf(
+      PropTypes.shape({
+        photo: PropTypes.string,
+        title: PropTypes.string,
+        description: PropTypes.string,
+        rightPhoto: PropTypes.bool,
+      })
+    ),
+    right: PropTypes.arrayOf(
+      PropTypes.shape({
+        photo: PropTypes.string,
+        title: PropTypes.string,
+        description: PropTypes.string,
+        rightPhoto: PropTypes.bool,
+      })
+    ),
+  }
   render = () => {
+    const { title, left, right } = this.props
     return (
       <section id="organize" className="ts-block ts-block-no-padding pt-5">
         <div className="container">
           <div className="ts-title text-center">
-            <h2>Organize Everything!</h2>
+            <h2>{title}</h2>
           </div>
           <div className="row align-items-center">
             <div className="col-md-4">
-              <Content
-                rightPhoto
-                photo="assets/img/icon-target.png"
-                title="Monitor Your Activity"
-                description="Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis"
-              />
-              <Content
-                rightPhoto
-                photo="assets/img/icon-target.png"
-                title="Analyze Your Results"
-                description="Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis"
-              />
-              <Content
-                rightPhoto
-                photo="assets/img/icon-target.png"
-                title="Get Better!"
-                description="Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis"
-              />
+              {left.map((c, i) => <Content key={i} rightPhoto {...c} />)}
             </div>
             <Phone />
             <div className="col-md-4">
-              <Content
-                photo="assets/img/icon-target.png"
-                title="Support Chat"
-                description="Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis"
-              />
-              <Content
-                photo="assets/img/icon-map.png"
-                title="Runs on Any Place"
-                description="Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis"
-              />
-              <Content
-                photo="assets/img/icon-video.png"
-                title="Video Tutorials"
-                description="Morbi et nisl a sapien malesuada scelerisque. Suspendisse tempor turpis mattis"
-              />
+              {right.map((c, i) => <Content key={i} {...c} />)}
             </div>
           </div>
         </div>
