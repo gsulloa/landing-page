@@ -1,6 +1,15 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 
 class Growth extends Component {
+  static propTypes = {
+    data: PropTypes.arrayOf(
+      PropTypes.shape({
+        title: PropTypes.string,
+        description: PropTypes.string,
+      })
+    ),
+  }
   render = () => {
     const { data } = this.props
     return (

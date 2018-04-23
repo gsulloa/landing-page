@@ -1,6 +1,13 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 
 class Content extends Component {
+  static propTypes = {
+    photo: PropTypes.string,
+    title: PropTypes.string,
+    description: PropTypes.string,
+    rightPhoto: PropTypes.bool,
+  }
   render = () => {
     const { photo, title, description, rightPhoto } = this.props
     return (

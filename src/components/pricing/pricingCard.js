@@ -1,6 +1,15 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 
 class PricingCard extends Component {
+  static propTypes = {
+    price: PropTypes.string,
+    period: PropTypes.string,
+    features: PropTypes.arrayOf(PropTypes.string),
+    restrictions: PropTypes.arrayOf(PropTypes.string),
+    title: PropTypes.string,
+    important: PropTypes.bool,
+  }
   static defaultProps = {
     features: [],
     restrictions: [],

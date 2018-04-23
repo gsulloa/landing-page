@@ -1,6 +1,10 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 
 class FriendLogos extends Component {
+  static propTypes = {
+    logos: PropTypes.arrayOf(PropTypes.string),
+  }
   render = () => {
     const { logos } = this.props
     return (

@@ -1,9 +1,29 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 
 import Content from "./content"
 import Phone from "./phone"
 
 class Organize extends Component {
+  static propTypes = {
+    title: PropTypes.string,
+    left: PropTypes.arrayOf(
+      PropTypes.shape({
+        photo: PropTypes.string,
+        title: PropTypes.string,
+        description: PropTypes.string,
+        rightPhoto: PropTypes.bool,
+      })
+    ),
+    right: PropTypes.arrayOf(
+      PropTypes.shape({
+        photo: PropTypes.string,
+        title: PropTypes.string,
+        description: PropTypes.string,
+        rightPhoto: PropTypes.bool,
+      })
+    ),
+  }
   render = () => {
     const { title, left, right } = this.props
     return (

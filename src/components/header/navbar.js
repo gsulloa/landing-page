@@ -1,11 +1,14 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 
 import MenuItem from "./menuItem"
 
 class NavBar extends Component {
+  static propTypes = {
+    navRefs: PropTypes.object,
+  }
   render = () => {
     const { navRefs } = this.props
-    console.log(navRefs)
     return (
       <nav
         className="navbar navbar-expand-lg navbar-dark fixed-top ts-separate-bg-element"

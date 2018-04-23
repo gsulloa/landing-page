@@ -1,6 +1,13 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 
 class Testimony extends Component {
+  static propTypes = {
+    photo: PropTypes.string,
+    text: PropTypes.string,
+    name: PropTypes.string,
+    occupation: PropTypes.string,
+  }
   render = () => {
     const { photo, text, name, occupation } = this.props
     return (

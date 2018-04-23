@@ -1,6 +1,14 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 
 class Information extends Component {
+  static propTypes = {
+    address: PropTypes.string,
+    addressExtra: PropTypes.string,
+    email: PropTypes.string,
+    phone: PropTypes.string,
+    skype: PropTypes.string,
+  }
   render = () => {
     const { address, addressExtra, email, phone, skype } = this.props
     return [

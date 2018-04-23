@@ -1,6 +1,23 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 
 class Form extends Component {
+  static propTypes = {
+    title: PropTypes.string,
+    name: PropTypes.shape({
+      title: PropTypes.string,
+      placeholder: PropTypes.string,
+    }),
+    email: PropTypes.shape({
+      title: PropTypes.string,
+      placeholder: PropTypes.string,
+    }),
+    message: PropTypes.shape({
+      title: PropTypes.string,
+      placeholder: PropTypes.string,
+    }),
+    submit: PropTypes.string,
+  }
   render = () => {
     const { title, name, email, message, submit } = this.props
     return [

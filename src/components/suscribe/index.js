@@ -1,6 +1,17 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 
 class Suscribe extends Component {
+  static propTypes = {
+    backgroundPhoto: PropTypes.string,
+    title: PropTypes.string,
+    email: PropTypes.shape({
+      title: PropTypes.string,
+      placeholder: PropTypes.string,
+    }),
+    description: PropTypes.string,
+    submit: PropTypes.string,
+  }
   render = () => {
     const { backgroundPhoto, title, email, description, submit } = this.props
     return (

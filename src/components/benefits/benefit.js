@@ -1,6 +1,12 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 
 class Benefit extends Component {
+  static propTypes = {
+    title: PropTypes.string,
+    description: PropTypes.string,
+    icon: PropTypes.string,
+  }
   render = () => {
     const { title, description, icon } = this.props
     return (

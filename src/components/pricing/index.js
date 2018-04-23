@@ -1,8 +1,23 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 
 import PricingCard from "./pricingCard"
 
 class Pricing extends Component {
+  static propTypes = {
+    backgroundPhoto: PropTypes.string,
+    title: PropTypes.string,
+    options: PropTypes.arrayOf(
+      PropTypes.shape({
+        price: PropTypes.string,
+        period: PropTypes.string,
+        features: PropTypes.arrayOf(PropTypes.string),
+        restrictions: PropTypes.arrayOf(PropTypes.string),
+        title: PropTypes.string,
+        important: PropTypes.bool,
+      })
+    ),
+  }
   render = () => {
     const { backgroundPhoto, title, options } = this.props
     return (

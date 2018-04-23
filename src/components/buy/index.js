@@ -1,6 +1,12 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 
 class Buy extends Component {
+  static propTypes = {
+    title: PropTypes.string,
+    description: PropTypes.string,
+    button: PropTypes.string,
+  }
   render = () => {
     const { title, description, button } = this.props
     return (

@@ -1,6 +1,14 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 
 class Feature extends Component {
+  static propTypes = {
+    title: PropTypes.string,
+    description: PropTypes.string,
+    elements: PropTypes.arrayOf(PropTypes.string),
+    photo: PropTypes.string,
+    i: PropTypes.number,
+  }
   renderDescription = () => {
     const { title, description, elements } = this.props
     return (

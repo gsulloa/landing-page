@@ -1,6 +1,12 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 
 class Member extends Component {
+  static propTypes = {
+    name: PropTypes.string,
+    occupation: PropTypes.string,
+    photo: PropTypes.string,
+  }
   render = () => {
     const { name, occupation, photo } = this.props
     return (

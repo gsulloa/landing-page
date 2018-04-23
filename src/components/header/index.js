@@ -1,8 +1,20 @@
 import React, { Component, createRef } from "react"
+import PropTypes from "prop-types"
 
 import NavBar from "./navbar"
 
 class Header extends Component {
+  static propTypes = {
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    learn: PropTypes.string,
+    video: PropTypes.shape({
+      href: PropTypes.string,
+      button: PropTypes.string,
+    }),
+    backgroundPhoto: PropTypes.string,
+    navRefs: PropTypes.object,
+  }
   constructor(props) {
     super(props)
     this.header = createRef()
@@ -20,7 +32,7 @@ class Header extends Component {
     this.resizeHeader()
   }
   resizeHeader = () => {
-    this.setState(state => ({
+    this.setState(() => ({
       windowHeight: window.innerHeight,
     }))
   }
