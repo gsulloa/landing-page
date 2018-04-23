@@ -1,14 +1,26 @@
 import React, { Component, createRef } from "react"
+import PropTypes from "prop-types"
 
 import NavBar from "./navbar"
 
 class Header extends Component {
+  static propTypes = {
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    learn: PropTypes.string,
+    video: PropTypes.shape({
+      href: PropTypes.string,
+      button: PropTypes.string,
+    }),
+    backgroundPhoto: PropTypes.string,
+    navRefs: PropTypes.object,
+  }
   constructor(props) {
     super(props)
     this.header = createRef()
   }
   state = {
-    windowHeight: 0
+    windowHeight: 0,
   }
   componentWillMount = () => {
     window.addEventListener("resize", this.resizeHeader)
@@ -20,11 +32,12 @@ class Header extends Component {
     this.resizeHeader()
   }
   resizeHeader = () => {
-    this.setState(state => ({
+    this.setState(() => ({
       windowHeight: window.innerHeight,
     }))
   }
   render = () => {
+    const { title, subtitle, learn, video, backgroundPhoto } = this.props
     return (
       <header
         ref={this.header}
@@ -32,25 +45,27 @@ class Header extends Component {
         id="ts-hero"
         className="ts-separate-bg-element"
         data-mask-bottom-wn-color="#fff"
-        data-bg-image="assets/img/bg-girl-02.jpg"
+        data-bg-image={backgroundPhoto}
         data-bg-color="#737373"
         data-bg-image-opacity=".8"
         data-bg-parallax="scroll"
         data-bg-parallax-speed="3"
       >
-        <NavBar />
-        
+        <NavBar navRefs={this.props.navRefs} />
+
         <div className="container align-self-center align-items-center">
           <div className="row">
             <div className="col-md-6">
-              <h3 className="ts-opacity__50">We Are Introducing</h3>
-              <h1>Startup Landing Page Pack</h1>
+              <h3 className="ts-opacity__50">{title}</h3>
+              <h1>{subtitle}</h1>
             </div>
           </div>
-          <a href="#what-youll-get" className="btn btn-primary ts-scroll">Learn More</a>
-          <a href="https://vimeo.com/63502573" className="btn btn-outline-light video-popup">
-            <i className="fa fa-play mr-2"></i>
-            Video
+          <a href="#what-youll-get" className="btn btn-primary ts-scroll">
+            {learn}
+          </a>
+          <a href={video.href} className="btn btn-outline-light video-popup">
+            <i className="fa fa-play mr-2" />
+            {video.button}
           </a>
         </div>
       </header>
