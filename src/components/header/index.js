@@ -25,6 +25,7 @@ class Header extends Component {
     }))
   }
   render = () => {
+    const { title, subtitle, learn, video, backgroundPhoto } = this.props
     return (
       <header
         ref={this.header}
@@ -32,7 +33,7 @@ class Header extends Component {
         id="ts-hero"
         className="ts-separate-bg-element"
         data-mask-bottom-wn-color="#fff"
-        data-bg-image="assets/img/bg-girl-02.jpg"
+        data-bg-image={backgroundPhoto}
         data-bg-color="#737373"
         data-bg-image-opacity=".8"
         data-bg-parallax="scroll"
@@ -43,19 +44,16 @@ class Header extends Component {
         <div className="container align-self-center align-items-center">
           <div className="row">
             <div className="col-md-6">
-              <h3 className="ts-opacity__50">We Are Introducing</h3>
-              <h1>Startup Landing Page Pack</h1>
+              <h3 className="ts-opacity__50">{title}</h3>
+              <h1>{subtitle}</h1>
             </div>
           </div>
           <a href="#what-youll-get" className="btn btn-primary ts-scroll">
-            Learn More
+            {learn}
           </a>
-          <a
-            href="https://vimeo.com/63502573"
-            className="btn btn-outline-light video-popup"
-          >
+          <a href={video.href} className="btn btn-outline-light video-popup">
             <i className="fa fa-play mr-2" />
-            Video
+            {video.button}
           </a>
         </div>
       </header>

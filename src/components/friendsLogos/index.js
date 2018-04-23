@@ -2,6 +2,7 @@ import React, { Component } from "react"
 
 class FriendLogos extends Component {
   render = () => {
+    const { logos } = this.props
     return (
       <section
         id="partners"
@@ -11,21 +12,11 @@ class FriendLogos extends Component {
       >
         <div className="container">
           <div className="d-block d-md-flex justify-content-between align-items-center text-center ts-partners ">
-            <a href="#">
-              <img src="assets/img/logo-01.png" alt="" />
-            </a>
-            <a href="#">
-              <img src="assets/img/logo-02.png" alt="" />
-            </a>
-            <a href="#">
-              <img src="assets/img/logo-03.png" alt="" />
-            </a>
-            <a href="#">
-              <img src="assets/img/logo-04.png" alt="" />
-            </a>
-            <a href="#">
-              <img src="assets/img/logo-05.png" alt="" />
-            </a>
+            {logos.map((logo, i) => (
+              <a href="#" key={i}>
+                <img src={logo} alt="" />
+              </a>
+            ))}
           </div>
         </div>
       </section>

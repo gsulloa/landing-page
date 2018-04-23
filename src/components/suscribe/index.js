@@ -2,11 +2,12 @@ import React, { Component } from "react"
 
 class Suscribe extends Component {
   render = () => {
+    const { backgroundPhoto, title, email, description, submit } = this.props
     return (
       <section
         id="subscribe"
         className="ts-block ts-background-is-dark ts-separate-bg-element"
-        data-bg-image="assets/img/bg-girl-book.jpg"
+        data-bg-image={backgroundPhoto}
         data-bg-image-opacity=".1"
         data-bg-color="#5f8d87"
         data-bg-parallax="scroll"
@@ -15,7 +16,7 @@ class Suscribe extends Component {
         data-mask-bottom-wn-color="#fff"
       >
         <div className="container">
-          <h3>Subscribe For The Latest News!</h3>
+          <h3>{title}</h3>
           <form
             className="ts-form ts-form-email ts-labels-inside-input"
             data-php-path="assets/php/email.php"
@@ -23,24 +24,24 @@ class Suscribe extends Component {
             <div className="row">
               <div className="col-md-10">
                 <div className="form-group mb-0">
-                  <label htmlFor="email-subscribe">Email address</label>
+                  <label htmlFor="email-subscribe">{email.title}</label>
                   <input
                     type="email"
                     className="form-control"
                     id="email-subscribe"
                     aria-describedby="subscribe"
                     name="email"
-                    placeholder=""
+                    placeholder={email.placeholder}
                     required
                   />
                   <small className="form-text mt-2 ts-opacity__50">
-                    *You’ll get only relevant news once a week
+                    {description}
                   </small>
                 </div>
               </div>
               <div className="col-md-2">
                 <button type="submit" className="btn btn-dark w-100">
-                  Submit
+                  {submit}
                 </button>
               </div>
             </div>

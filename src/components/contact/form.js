@@ -2,8 +2,9 @@ import React, { Component } from "react"
 
 class Form extends Component {
   render = () => {
+    const { title, name, email, message, submit } = this.props
     return [
-      <h3 key="title">Contact Form</h3>,
+      <h3 key="title">{title}</h3>,
       <form
         key="form"
         id="form-contact"
@@ -14,26 +15,26 @@ class Form extends Component {
         <div className="row">
           <div className="col-md-6 col-sm-6">
             <div className="form-group">
-              <label htmlFor="form-contact-name">Your Name *</label>
+              <label htmlFor="form-contact-name">{name.title}</label>
               <input
                 type="text"
                 className="form-control"
                 id="form-contact-name"
                 name="name"
-                placeholder="Your Name"
+                placeholder={name.placeholder}
                 required
               />
             </div>
           </div>
           <div className="col-md-6 col-sm-6">
             <div className="form-group">
-              <label htmlFor="form-contact-email">Your Email *</label>
+              <label htmlFor="form-contact-email">{email.title}</label>
               <input
                 type="email"
                 className="form-control"
                 id="form-contact-email"
                 name="email"
-                placeholder="Your Email"
+                placeholder={email.placeholder}
                 required
               />
             </div>
@@ -42,13 +43,13 @@ class Form extends Component {
         <div className="row">
           <div className="col-md-12">
             <div className="form-group">
-              <label htmlFor="form-contact-message">Your Message *</label>
+              <label htmlFor="form-contact-message">{message.title}</label>
               <textarea
                 className="form-control"
                 id="form-contact-message"
                 rows="5"
                 name="message"
-                placeholder="Your Message"
+                placeholder={message.placeholder}
                 required
               />
             </div>
@@ -60,7 +61,7 @@ class Form extends Component {
             className="btn btn-primary float-right"
             id="form-contact-submit"
           >
-            Send a Message
+            {submit}
           </button>
         </div>
         <div className="form-contact-status" />

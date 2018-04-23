@@ -2,6 +2,7 @@ import React, { Component } from "react"
 
 class Buy extends Component {
   render = () => {
+    const { title, description, button } = this.props
     return (
       <section
         id="buy-now"
@@ -11,14 +12,11 @@ class Buy extends Component {
       >
         <div className="container">
           <div className="ts-title">
-            <h2>Buy The StartUps Now!</h2>
-            <h5>
-              Curabitur tellus enim, aliquet et porttitor id suspendisse tempor
-              turpis mattis{" "}
-            </h5>
+            <h2>{title}</h2>
+            <h5> {description}</h5>
           </div>
           <a href="#" className="btn btn-primary">
-            Buy Now!
+            {button}
           </a>
         </div>
       </section>

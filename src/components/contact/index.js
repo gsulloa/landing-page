@@ -4,6 +4,7 @@ import Form from "./form"
 
 class Contact extends Component {
   render = () => {
+    const { backgroundPhoto, information, form } = this.props
     return (
       <section
         id="contact"
@@ -16,16 +17,10 @@ class Contact extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-4">
-              <Information
-                address="2590 Rocky Road"
-                addressExtra="Philadelphia, PA 19108"
-                email="office@example.com"
-                phone="+1 215-606-0391"
-                skype="startups.agency"
-              />
+              <Information {...information} />
             </div>
             <div className="col-md-8">
-              <Form />
+              <Form {...form} />
             </div>
           </div>
         </div>
