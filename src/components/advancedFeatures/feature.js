@@ -1,6 +1,14 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 
 class Feature extends Component {
+  static propTypes = {
+    title: PropTypes.string,
+    description: PropTypes.string,
+    elements: PropTypes.arrayOf(PropTypes.string),
+    photo: PropTypes.string,
+    i: PropTypes.number,
+  }
   renderDescription = () => {
     const { title, description, elements } = this.props
     return (
@@ -18,19 +26,20 @@ class Feature extends Component {
   renderPhoto = () => {
     const { photo } = this.props
     return (
-      <div className="col-md-7 col-xl-7 text-center" data-animate="ts-fadeInUp" data-delay="0.1s">
+      <div
+        className="col-md-7 col-xl-7 text-center"
+        data-animate="ts-fadeInUp"
+        data-delay="0.1s"
+      >
         <div className="px-3">
-          <img src={photo} className="mw-100" alt=""/>
+          <img src={photo} className="mw-100" alt="" />
         </div>
       </div>
     )
   }
   render = () => {
     const { i } = this.props
-    const data = [
-      this.renderDescription(),
-      this.renderPhoto()
-    ]
+    const data = [this.renderDescription(), this.renderPhoto()]
     return (
       <section id="advanced-features" className="ts-block">
         <div className="container">

@@ -1,32 +1,25 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 
 import Feature from "./feature"
 
 class AdvancedFeatures extends Component {
+  static propTypes = {
+    features: PropTypes.arrayOf(
+      PropTypes.shape({
+        title: PropTypes.string,
+        description: PropTypes.string,
+        elements: PropTypes.arrayOf(PropTypes.string),
+        photo: PropTypes.string,
+        i: PropTypes.number,
+      })
+    ),
+  }
+  static defaultProps = {
+    features: [],
+  }
   render = () => {
-    const data = [
-      {
-        title: "Advanced Features",
-        description: "Vivamus fermentum magna non faucibus dignissim. Sed a venenatis mi, vel tempus neque. Fusce pharetra, diam in hendrerit facilisis, enim diam cursus augue.",
-        elements: [
-          "Sed a venenatis mi, vel tempus neque.",
-          "Diam in hendrerit facilisis, enim diam cursus augue.",
-          "Nullam tellus turpis, molestie ac urna",
-        ],
-        photo: "assets/img/image-device-01.png",
-      },
-      {
-        title: "Responsive",
-        description: "Vivamus fermentum magna non faucibus dignissim. Sed a venenatis mi, vel tempus neque. Fusce pharetra, diam in hendrerit facilisis, enim diam cursus augue.",
-        elements: [
-          "Sed a venenatis mi, vel tempus neque.",
-          "Diam in hendrerit facilisis, enim diam cursus augue.",
-          "Nullam tellus turpis, molestie ac urna",
-        ],
-        photo: "assets/img/image-device-02.png",
-      }
-    ]
-    return data.map((e, i) => <Feature key={i} i={i} {...e} />)
+    return this.props.features.map((e, i) => <Feature key={i} i={i} {...e} />)
   }
 }
 
