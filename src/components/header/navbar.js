@@ -36,17 +36,18 @@ class NavBar extends Component {
                 className="active"
                 href="#page-top"
               >
-                Home <span className="sr-only">(current)</span>
+                Inicio <span className="sr-only">(current)</span>
               </MenuItem>
               <MenuItem
                 component={navRefs.advancedFeatures.current}
                 href="#advanced-features"
               >
-                Features
+                Características
               </MenuItem>
               <MenuItem component={navRefs.pricing.current} href="#pricing">
-                Pricing
+                Precio
               </MenuItem>
+              {/*
               <MenuItem
                 component={navRefs.ourClients.current}
                 href="#our-clients"
@@ -56,22 +57,23 @@ class NavBar extends Component {
               <MenuItem component={navRefs.ourTeam.current} href="#our-team">
                 Team
               </MenuItem>
+              */}
               <MenuItem
                 component={navRefs.contact.current}
                 href="#form-contact"
               >
-                Contact
+                Contacto
               </MenuItem>
               <a
                 className="btn btn-outline-light btn-sm m-1 px-3 ts-width__auto"
-                href="#"
+                href={process.env.REACT_APP_SIGNIN || "#"}
               >
                 <i className="fas fa-sign-in-alt ts-opacity__80 pr-2" />
                 Log In
               </a>
               <a
                 className="btn btn-primary btn-sm m-1 px-3 ts-width__auto"
-                href="#"
+                href={process.env.REACT_APP_SIGNUP || "#"}
               >
                 Register
               </a>

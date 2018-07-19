@@ -16,11 +16,9 @@ class FriendLogos extends Component {
       >
         <div className="container">
           <h3>Colaboración de:</h3>
-          <div className="d-block d-md-flex justify-content-between align-items-center text-center ts-partners ">
+          <div className="d-block d-md-flex justify-content-center align-items-center flex-md-wrap flex-md-row text-center ts-partners ">
             {logos.map((logo, i) => (
-              <a href="#" key={i}>
-                <img src={logo} alt="" />
-              </a>
+              <img src={logo} alt="" className="ts-logos" key={i} />
             ))}
           </div>
         </div>

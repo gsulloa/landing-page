@@ -10,7 +10,7 @@
             "Presente en dispositivos moviles y Web",
             "Contenido autoexplicativo para mejorar la experiencia de aprendizaje"
           ],
-          "photo": "assets/img/image-device-01.png"
+          "photo": "assets/img/what.png"
         },
         {
           "title": "Modelos 3D con Realidad Aumentada",
@@ -29,17 +29,17 @@
         {
           "title": "Recursos anatómicos digitales",
           "description": "Gran variedad de recursos anatómicos, que incluye contenido de aprendizaje en videos, imagenes, modelos 3D y más.",
-          "icon": "assets/img/icon-chart.png"
+          "icon": "assets/img/spinal-column.png"
         },
         {
           "title": "Modelos 3D de alta fidelidad",
           "description": "Todos nuestros modelos 3D se construyeron con tecnologías de alta presición, y con posibilidad de visualizar con Realidad Virtual.",
-          "icon": "assets/img/icon-target.png"
+          "icon": "assets/img/3d.png"
         },
         {
           "title": "Paga sólo lo que usas",
           "description": "Nuestro modelo de negocios no incluye una mensualidad, solo debes pagar por los contenidos específicos que usas y no por todo nuestro contenido",
-          "icon": "assets/img/icon-first.png"
+          "icon": "assets/img/contract.png"
         }
       ]
     },
@@ -71,13 +71,15 @@
           "title": "Tu mensaje *",
           "placeholder": "Tu mensaje"
         },
-        "button": "Enviar"
+        "submit": "Enviar"
       }
     },
     "friendsLogos": {
       "logos": [
         "assets/img/ing-uc.png",
-        "assets/img/med-uc.png"
+        "assets/img/med-uc.png",
+        "assets/img/diseno-uc.png",
+        "assets/img/fondef.png"
       ]
     },
     "growth": {
@@ -185,38 +187,44 @@
       ]
     },
     "pricing": {
-      "backgroundPhoto": "assets/img/bg.jpg",
+      "backgroundPhoto": "assets/img/bg-table.jpg",
       "title": "Precios Accesibles",
       "options": [
         {
-          "title": "Brazo",
-          "price": "$1,00",
-          "photo": "assets/img/icon-map.png"
+          "title": "Cortes Cara",
+          "price": "$4.500",
+          "photo": "http://sightlinemediaentertainment.com/wp-content/uploads/2015/09/placeholder-cover.jpg",
+          "url": "http://app.medicinehub.cloud/documents/315cb4a7-2145-4e8e-b20f-51928f60f6fe"
         },
         {
-          "title": "Pierna",
-          "price": "$5,00",
-          "photo": "assets/img/icon-map.png"
+          "title": "Cortes Cuello",
+          "price": "$4.500",
+          "photo": "http://sightlinemediaentertainment.com/wp-content/uploads/2015/09/placeholder-cover.jpg",
+          "url": "http://app.medicinehub.cloud/documents/d00262aa-1522-434f-9d13-e1e94e0a1328"
         },
         {
-          "title": "Torax",
-          "price": "$3,00",
-          "photo": "assets/img/icon-map.png"
+          "title": "Cortes Torax-Abdomen",
+          "price": "$4.500",
+          "photo": "http://sightlinemediaentertainment.com/wp-content/uploads/2015/09/placeholder-cover.jpg",
+          "url": "http://app.medicinehub.cloud/documents/523f26e2-0245-4e79-b06f-28a0e83f135c"
         },
         {
-          "title": "Antebrazo",
-          "price": "$1,00",
-          "photo": "assets/img/icon-map.png"
+          "title": "Cortes Antebrazo",
+          "price": "$4.500",
+          "photo": "http://sightlinemediaentertainment.com/wp-content/uploads/2015/09/placeholder-cover.jpg",
+          "url": "http://app.medicinehub.cloud/documents/012abadf-8ca1-45ce-a8a8-2d65dac07217"
         },
         {
-          "title": "Cuello",
-          "price": "$10,00",
-          "photo": "assets/img/icon-map.png"
+          "title": "Cortes Pelvis",
+          "price": "$4.500",
+          "photo": "http://sightlinemediaentertainment.com/wp-content/uploads/2015/09/placeholder-cover.jpg",
+          "url": "http://app.medicinehub.cloud/documents/11a02ff2-78ec-4b39-a415-abb147b39a4c"
         },
         {
-          "title": "Mano",
-          "price": "$1,00",
-          "photo": "assets/img/icon-map.png"
+          "title": "Cortes Pierna",
+          "price": "$4.500",
+          "photo": "http://sightlinemediaentertainment.com/wp-content/uploads/2015/09/placeholder-cover.jpg",
+          "url": "http://app.medicinehub.cloud/documents/ffb5dbc1-5210-4aa6-bfa0-76d84bdf915a"
         }
       ]
     },

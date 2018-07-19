@@ -1523,6 +1523,12 @@ ul.ts-list-divided li:last-child {
     padding: .625rem .3125rem;
 }
 
+.ts-logos {
+    width: auto;
+    height: 90px;
+    margin: 20px;
+}
+
 /*-------------------------------------------
   -- Plugins
 -------------------------------------------*/

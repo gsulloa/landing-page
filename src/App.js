@@ -70,12 +70,14 @@ class App extends Component {
               {...content.advancedFeatures}
             />
             <Pricing ref={this.Pricing} {...content.pricing} />
+            {/* 
             <Buy {...content.buy} />
             <OurClients ref={this.OurClients} {...content.ourClients} />
             <Suscribe {...content.suscribe} />
             <Organize {...content.organize} />
             <img className="ts-hr-skewed" src="assets/img/hr-skewed.png" />
             <OurTeam ref={this.OurTeam} {...content.ourTeam} />
+            */}
           </main>
           <footer id="ts-footer">
             <Contact ref={this.Contact} {...content.contact} />

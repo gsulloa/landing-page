@@ -15,7 +15,7 @@ class PricingCard extends Component {
     restrictions: [],
   }
   renderNormal = () => {
-    const { price, photo, title } = this.props
+    const { price, photo, title, url } = this.props
     return (
       <div className="col-sm-4 col-lg-4">
         <div
@@ -36,7 +36,7 @@ class PricingCard extends Component {
             </ul>
           </div>
           <div className="card-footer bg-transparent pt-0 ts-border-none">
-            <a href="#" className="btn btn-outline-dark ts-btn-border-muted">
+            <a href={url} className="btn btn-outline-dark ts-btn-border-muted">
               Comprar Ahora
             </a>
           </div>
