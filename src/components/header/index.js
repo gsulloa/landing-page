@@ -56,8 +56,8 @@ class Header extends Component {
         <div className="container align-self-center align-items-center">
           <div className="row">
             <div className="col-md-6">
-              <h3 className="ts-opacity__50">{title}</h3>
-              <h1>{subtitle}</h1>
+              <h3>{title}</h3>
+              <h4 className="ts-opacity__50">{subtitle}</h4>
             </div>
           </div>
           <a href="#what-youll-get" className="btn btn-primary ts-scroll">
