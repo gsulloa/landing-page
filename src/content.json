@@ -29,17 +29,17 @@
         {
           "title": "Recursos anatómicos digitales",
           "description": "Gran variedad de recursos anatómicos, que incluye contenido de aprendizaje en videos, imagenes, modelos 3D y más.",
-          "icon": "assets/img/spinal-column.png"
+          "icon": "assets/img/anatomical-resources.png"
         },
         {
           "title": "Modelos 3D de alta fidelidad",
           "description": "Todos nuestros modelos 3D se construyeron con tecnologías de alta presición, y con posibilidad de visualizar con Realidad Virtual.",
-          "icon": "assets/img/3d.png"
+          "icon": "assets/img/3dmodel.png"
         },
         {
-          "title": "Paga sólo lo que usas",
+          "title": "Modelos Impresos",
           "description": "Nuestro modelo de negocios no incluye una mensualidad, solo debes pagar por los contenidos específicos que usas y no por todo nuestro contenido",
-          "icon": "assets/img/contract.png"
+          "icon": "assets/img/3dprint.png"
         }
       ]
     },
