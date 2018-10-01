@@ -24,8 +24,8 @@ class OurTeam extends Component {
         data-bg-image={photo}
         data-bg-color="#000"
         data-bg-image-opacity=".7"
-        data-mask-top-nw-color="#fff"
-        data-mask-bottom-wn-color="#fff"
+        data-mask-top-nw-color="#000"
+        data-mask-bottom-wn-color="#eaeaea"
         data-bg-size="contain"
         style={{ height: window.innerHeight }}
       >

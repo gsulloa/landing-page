@@ -45,19 +45,11 @@ class NavBar extends Component {
                 Características
               </MenuItem>
               <MenuItem component={navRefs.pricing.current} href="#pricing">
-                Precio
-              </MenuItem>
-              {/*
-              <MenuItem
-                component={navRefs.ourClients.current}
-                href="#our-clients"
-              >
-                Our Clients
+                Productos
               </MenuItem>
               <MenuItem component={navRefs.ourTeam.current} href="#our-team">
-                Team
+                Equipo
               </MenuItem>
-              */}
               <MenuItem
                 component={navRefs.contact.current}
                 href="#form-contact"

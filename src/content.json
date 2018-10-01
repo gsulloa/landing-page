@@ -7,14 +7,14 @@
           "title": "Que es MedicineHub",
           "description": "Utilizamos las últimas tecnologías para poder entregar los mejores recursos anatómicos en 3D y en Realidad Virtual para apoyar el aprendizaje de anatomía.",
           "elements": [
-            "Presente en dispositivos moviles y Web",
+            "Presente en dispositivos moviles, web y desktop",
             "Contenido autoexplicativo para mejorar la experiencia de aprendizaje"
           ],
           "photo": "assets/img/what.jpg"
         },
         {
           "title": "Modelos 3D Físicos y Digitales",
-          "description": "",
+          "description": "Disponemos de modelos en ambos formatos para mejorar el aprendizaje. Todos estos modelos fueron realizados con tecnologías de alta presición basados en muestras cadavericas reales.",
           "elements": [
             "Modelos digitales rotulados con metadatos anatómicos",
             "Maximiza tu experiencia de aprendizaje"
@@ -32,13 +32,13 @@
           "icon": "assets/img/anatomical-resources.png"
         },
         {
-          "title": "Modelos 3D de alta fidelidad",
-          "description": "Todos nuestros modelos 3D se construyeron con tecnologías de alta presición, y con posibilidad de visualizar con Realidad Virtual.",
+          "title": "Modelos 3D de muestras cadavericas",
+          "description": "Todos nuestros modelos 3D se construyeron con tecnologías de alta presición, basados en preparaciones reales.",
           "icon": "assets/img/3dmodel.png"
         },
         {
           "title": "Modelos Físicos",
-          "description": "Packs de segmentos corporales modelados a partir de preparaciones anatómicas reales",
+          "description": "Disponemos de packs de segmentos corporales modelados a partir de preparaciones anatómicas reales",
           "icon": "assets/img/3dprint.png"
         }
       ]
@@ -176,7 +176,7 @@
     "ourTeam": {
       "title": "Nuestro Equipo",
       "description": "El valor de MedicineHub está en nuestro equipo multidisciplinario: Escuela de Medicina, Ingeniería y Diseño",
-      "photo": "assets/img/team.jpg",
+      "photo": "assets/img/ourteam.jpg",
       "members": [
         {
           "name": "Oscar Inzunza",
