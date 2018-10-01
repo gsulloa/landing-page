@@ -64,20 +64,14 @@ class App extends Component {
           <main id="ts-content">
             <Benefits {...content.benefits} />
             <FriendLogos {...content.friendsLogos} />
-            <Growth {...content.growth} />
+
+            <FriendLogos {...content.friendsLogos} />
             <AdvancedFeatures
               ref={this.AdvancedFeatures}
               {...content.advancedFeatures}
             />
             <Pricing ref={this.Pricing} {...content.pricing} />
-            {/* 
-            <Buy {...content.buy} />
-            <OurClients ref={this.OurClients} {...content.ourClients} />
-            <Suscribe {...content.suscribe} />
-            <Organize {...content.organize} />
-            <img className="ts-hr-skewed" src="assets/img/hr-skewed.png" />
             <OurTeam ref={this.OurTeam} {...content.ourTeam} />
-            */}
           </main>
           <footer id="ts-footer">
             <Contact ref={this.Contact} {...content.contact} />

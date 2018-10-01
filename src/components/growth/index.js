@@ -27,17 +27,7 @@ class Growth extends Component {
       >
         <div className="container">
           <div className="ts-promo-numbers">
-            <div className="row">
-              {data.map((e, i) => (
-                <div key={i} className="col-sm-4">
-                  <div className="ts-promo-number text-center">
-                    <h2 data-animate="ts-zoomIn">{e.title}</h2>
-                    <h3 className="mb-0 ts-opacity__50">{e.description}</h3>
-                    <span className="ts-promo-number-divider" />
-                  </div>
-                </div>
-              ))}
-            </div>
+            <div className="row" />
           </div>
         </div>
       </section>

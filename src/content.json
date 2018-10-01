@@ -38,7 +38,7 @@
         },
         {
           "title": "Modelos Impresos",
-          "description": "Nuestro modelo de negocios no incluye una mensualidad, solo debes pagar por los contenidos específicos que usas y no por todo nuestro contenido",
+          "description": "Disponemos de Packs especiales con los recursos 3D en su versión física",
           "icon": "assets/img/3dprint.png"
         }
       ]
@@ -98,7 +98,7 @@
         "button": "Video",
         "href":"https://vimeo.com/63502573"
       },
-      "backgroundPhoto": "assets/img/bg.jpg"
+      "backgroundPhoto": "assets/img/bg.png"
     },
     "organize": {
       "title": "Organize Everything!",
@@ -167,7 +167,7 @@
       ]
     },
     "ourTeam": {
-      "title": "Our Team",
+      "title": "Nuestro Equipo",
       "members": [
         {
           "name": "Jane Dow",
@@ -193,38 +193,38 @@
         {
           "title": "Cortes Cara",
           "price": "$4.500",
-          "photo": "http://sightlinemediaentertainment.com/wp-content/uploads/2015/09/placeholder-cover.jpg",
-          "url": "http://app.medicinehub.cloud/documents/315cb4a7-2145-4e8e-b20f-51928f60f6fe"
+          "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/cara.png",
+          "url": "https://app.medicinehub.cloud/documents/315cb4a7-2145-4e8e-b20f-51928f60f6fe"
         },
         {
           "title": "Cortes Cuello",
           "price": "$4.500",
-          "photo": "http://sightlinemediaentertainment.com/wp-content/uploads/2015/09/placeholder-cover.jpg",
-          "url": "http://app.medicinehub.cloud/documents/d00262aa-1522-434f-9d13-e1e94e0a1328"
+          "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/cuello.png",
+          "url": "https://app.medicinehub.cloud/documents/d00262aa-1522-434f-9d13-e1e94e0a1328"
         },
         {
           "title": "Cortes Torax-Abdomen",
           "price": "$4.500",
-          "photo": "http://sightlinemediaentertainment.com/wp-content/uploads/2015/09/placeholder-cover.jpg",
-          "url": "http://app.medicinehub.cloud/documents/523f26e2-0245-4e79-b06f-28a0e83f135c"
+          "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/torax-abdomen.png",
+          "url": "https://app.medicinehub.cloud/documents/523f26e2-0245-4e79-b06f-28a0e83f135c"
         },
         {
           "title": "Cortes Antebrazo",
           "price": "$4.500",
-          "photo": "http://sightlinemediaentertainment.com/wp-content/uploads/2015/09/placeholder-cover.jpg",
-          "url": "http://app.medicinehub.cloud/documents/012abadf-8ca1-45ce-a8a8-2d65dac07217"
+          "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/antebrazo.png",
+          "url": "https://app.medicinehub.cloud/documents/012abadf-8ca1-45ce-a8a8-2d65dac07217"
         },
         {
           "title": "Cortes Pelvis",
           "price": "$4.500",
-          "photo": "http://sightlinemediaentertainment.com/wp-content/uploads/2015/09/placeholder-cover.jpg",
-          "url": "http://app.medicinehub.cloud/documents/11a02ff2-78ec-4b39-a415-abb147b39a4c"
+          "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/pelvis.png",
+          "url": "https://app.medicinehub.cloud/documents/11a02ff2-78ec-4b39-a415-abb147b39a4c"
         },
         {
           "title": "Cortes Pierna",
           "price": "$4.500",
-          "photo": "http://sightlinemediaentertainment.com/wp-content/uploads/2015/09/placeholder-cover.jpg",
-          "url": "http://app.medicinehub.cloud/documents/ffb5dbc1-5210-4aa6-bfa0-76d84bdf915a"
+          "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/pierna.png",
+          "url": "https://app.medicinehub.cloud/documents/ffb5dbc1-5210-4aa6-bfa0-76d84bdf915a"
         }
       ]
     },

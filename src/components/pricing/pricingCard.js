@@ -27,7 +27,7 @@ class PricingCard extends Component {
               {title}
             </h5>
             <div className="ts-title py-5 mb-0">
-              <img src={photo} alt="" />
+              <img src={photo} alt="" style={{height: "210px"}} />
             </div>
           </div>
           <div className="card-body p-0">

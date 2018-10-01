@@ -50,6 +50,7 @@ class Header extends Component {
         data-bg-image-opacity=".5"
         data-bg-parallax="scroll"
         data-bg-parallax-speed="1"
+        data-bg-size="contain"
       >
         <NavBar navRefs={this.props.navRefs} />
 
