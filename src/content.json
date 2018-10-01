@@ -1,6 +1,54 @@
 [
   {
     "lang": "es",
+    "header": {
+      "title": "Desarrollo de recursos educativos que apoyan a la enseñanza de la morfología a nivel nacional y regional",
+      "subtitle": "Accede al mayor repositorio de recursos anatómicos físicos y virtuales de sudamérica. Experimenta el aprendizaje de Anatomía como nunca antes.",
+      "learn": "Conoce Más",
+      "video": {
+        "button": "Video",
+        "href":"https://www.youtube.com/watch?v=qpxzRZYd5d8"
+      },
+      "backgroundPhoto": "assets/img/bg.jpg"
+    },
+    "benefits": {
+      "title": "¿Qué entregamos?",
+      "elements": [
+        {
+          "title": "Recursos anatómicos digitales",
+          "description": "Gran variedad de recursos anatómicos, que incluye contenido de aprendizaje en videos, imagenes, modelos 3D y más.",
+          "icon": "assets/img/anatomical-resources.png"
+        },
+        {
+          "title": "Modelos 3D de muestras cadavericas",
+          "description": "Todos nuestros modelos 3D se construyeron con tecnologías de alta presición, basados en preparaciones reales.",
+          "icon": "assets/img/3dmodel.png"
+        },
+        {
+          "title": "Modelos Físicos",
+          "description": "Disponemos de packs de segmentos corporales modelados a partir de preparaciones anatómicas reales",
+          "icon": "assets/img/3dprint.png"
+        }
+      ]
+    },
+    "friendsLogos": {
+      "logos": [
+        "assets/img/med-uc.png",
+        "assets/img/ing-uc.png",
+        "assets/img/diseno-uc.png",
+        "assets/img/fondef.png",
+        "assets/img/dictuc.png"
+      ]
+    },
+    "clients": {
+      "logos": [
+        "assets/img/uach.png",
+        "assets/img/pucv.png",
+        "assets/img/upla.png",
+        "assets/img/ucm.png"
+      ]
+    },
+
     "advancedFeatures": {
       "features": [
         {
@@ -23,29 +71,79 @@
         }
       ]
     },
-    "benefits": {
-      "title": "¿Qué entregamos?",
-      "elements": [
+
+    "pricing": {
+      "backgroundPhoto": "assets/img/bg-pricing.jpg",
+      "title": "Nuestros Productos",
+      "options": [
         {
-          "title": "Recursos anatómicos digitales",
-          "description": "Gran variedad de recursos anatómicos, que incluye contenido de aprendizaje en videos, imagenes, modelos 3D y más.",
-          "icon": "assets/img/anatomical-resources.png"
+          "title": "Cortes Cara",
+          "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/cara.png",
+          "url": "https://app.medicinehub.cloud/documents/315cb4a7-2145-4e8e-b20f-51928f60f6fe"
         },
         {
-          "title": "Modelos 3D de muestras cadavericas",
-          "description": "Todos nuestros modelos 3D se construyeron con tecnologías de alta presición, basados en preparaciones reales.",
-          "icon": "assets/img/3dmodel.png"
+          "title": "Cortes Cuello",
+          "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/cuello.png",
+          "url": "https://app.medicinehub.cloud/documents/d00262aa-1522-434f-9d13-e1e94e0a1328"
         },
         {
-          "title": "Modelos Físicos",
-          "description": "Disponemos de packs de segmentos corporales modelados a partir de preparaciones anatómicas reales",
-          "icon": "assets/img/3dprint.png"
+          "title": "Cortes Torax-Abdomen",
+          "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/torax-abdomen.png",
+          "url": "https://app.medicinehub.cloud/documents/523f26e2-0245-4e79-b06f-28a0e83f135c"
+        },
+        {
+          "title": "Cortes Antebrazo",
+          "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/antebrazo.png",
+          "url": "https://app.medicinehub.cloud/documents/012abadf-8ca1-45ce-a8a8-2d65dac07217"
+        },
+        {
+          "title": "Cortes Pelvis",
+          "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/pelvis.png",
+          "url": "https://app.medicinehub.cloud/documents/11a02ff2-78ec-4b39-a415-abb147b39a4c"
+        },
+        {
+          "title": "Cortes Pierna",
+          "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/pierna.png",
+          "url": "https://app.medicinehub.cloud/documents/ffb5dbc1-5210-4aa6-bfa0-76d84bdf915a"
         }
       ]
     },
-    "buy": {
-      "title": "Buy The StartUps Now!",
-      "description": "Curabitur tellus enim, aliquet et porttitor id suspendisse tempor turpis mattis",
+
+    "ourTeam": {
+      "title": "Nuestro Equipo",
+      "description": "El valor de MedicineHub está en nuestro equipo multidisciplinario: Escuela de Medicina, Ingeniería y Diseño",
+      "photo": "assets/img/ourteam.jpg",
+      "members": [
+        {
+          "name": "Oscar Inzunza",
+          "occupation": "Director",
+          "photo": "assets/img/inzunza.jpg"
+        },
+        {
+          "name": "Andrés Neyem",
+          "occupation": "Co-Director",
+          "photo": "assets/img/neyem.jpg"
+        },
+        {
+          "name": "Denise Montt",
+          "occupation": "Investigador Asociado",
+          "photo": "assets/img/montt.jpg"
+        },
+        {
+          "name": "Gabriel Salgado",
+          "occupation": "Investigador Asociado",
+          "photo": "assets/img/salgado.jpg"
+        },
+        {
+          "name": "Ivan Caro",
+          "occupation": "Investigador Asociado",
+          "photo": "assets/img/caro.jpg"
+        }
+      ]
+    },
+    "download": {
+      "title": "Prueba MedicineHub Ahora!",
+      "description": "Para mejorar la experiencia de aprendizaje, y que puedas acceder a nuestro contenido en cualquier condición",
       "button": "Buy Now!"
     },
     "contact": {
@@ -73,22 +171,6 @@
         "submit": "Enviar"
       }
     },
-    "friendsLogos": {
-      "logos": [
-        "assets/img/med-uc.png",
-        "assets/img/ing-uc.png",
-        "assets/img/diseno-uc.png",
-        "assets/img/fondef.png"
-      ]
-    },
-    "clients": {
-      "logos": [
-        "assets/img/uach.png",
-        "assets/img/pucv.png",
-        "assets/img/upla.png",
-        "assets/img/ucm.png"
-      ]
-    },
     "growth": {
       "backgroundPhoto": "assets/img/bg.jpg",
       "data": [
@@ -96,16 +178,6 @@
         { "title": "10+", "description": "Organizaciones" },
         { "title": "200+", "description": "Atlases" }
       ]
-    },
-    "header": {
-      "title": "Desarrollo de recursos educativos que apoyan a la enseñanza de la morfología a nivel nacional y regional",
-      "subtitle": "Accede al mayor repositorio de recursos anatómicos físicos y virtuales de sudamérica. Experimenta el aprendizaje de Anatomía como nunca antes.",
-      "learn": "Conoce Más",
-      "video": {
-        "button": "Video",
-        "href":"https://www.youtube.com/watch?v=qpxzRZYd5d8"
-      },
-      "backgroundPhoto": "assets/img/bg.jpg"
     },
     "organize": {
       "title": "Organize Everything!",
@@ -170,76 +242,6 @@
           "name":"Jane Doe",
           "occupation":"CEO at MarketsGuru",
           "photo":"assets/img/person-05.jpg"
-        }
-      ]
-    },
-    "ourTeam": {
-      "title": "Nuestro Equipo",
-      "description": "El valor de MedicineHub está en nuestro equipo multidisciplinario: Escuela de Medicina, Ingeniería y Diseño",
-      "photo": "assets/img/ourteam.jpg",
-      "members": [
-        {
-          "name": "Oscar Inzunza",
-          "occupation": "Director",
-          "photo": "assets/img/inzunza.jpg"
-        },
-        {
-          "name": "Andrés Neyem",
-          "occupation": "Co-Director",
-          "photo": "assets/img/neyem.jpg"
-        },
-        {
-          "name": "Denise Montt",
-          "occupation": "Investigador Asociado",
-          "photo": "assets/img/montt.jpg"
-        },
-        {
-          "name": "Gabriel Salgado",
-          "occupation": "Investigador Asociado",
-          "photo": "assets/img/salgado.jpg"
-        },
-        {
-          "name": "Ivan Caro",
-          "occupation": "Investigador Asociado",
-          "photo": "assets/img/caro.jpg"
-        }
-
-
-      ]
-    },
-    "pricing": {
-      "backgroundPhoto": "assets/img/bg-pricing.jpg",
-      "title": "Nuestros Productos",
-      "options": [
-        {
-          "title": "Cortes Cara",
-          "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/cara.png",
-          "url": "https://app.medicinehub.cloud/documents/315cb4a7-2145-4e8e-b20f-51928f60f6fe"
-        },
-        {
-          "title": "Cortes Cuello",
-          "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/cuello.png",
-          "url": "https://app.medicinehub.cloud/documents/d00262aa-1522-434f-9d13-e1e94e0a1328"
-        },
-        {
-          "title": "Cortes Torax-Abdomen",
-          "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/torax-abdomen.png",
-          "url": "https://app.medicinehub.cloud/documents/523f26e2-0245-4e79-b06f-28a0e83f135c"
-        },
-        {
-          "title": "Cortes Antebrazo",
-          "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/antebrazo.png",
-          "url": "https://app.medicinehub.cloud/documents/012abadf-8ca1-45ce-a8a8-2d65dac07217"
-        },
-        {
-          "title": "Cortes Pelvis",
-          "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/pelvis.png",
-          "url": "https://app.medicinehub.cloud/documents/11a02ff2-78ec-4b39-a415-abb147b39a4c"
-        },
-        {
-          "title": "Cortes Pierna",
-          "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/pierna.png",
-          "url": "https://app.medicinehub.cloud/documents/ffb5dbc1-5210-4aa6-bfa0-76d84bdf915a"
         }
       ]
     },
