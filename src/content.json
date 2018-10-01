@@ -144,7 +144,42 @@
     "download": {
       "title": "Prueba MedicineHub Ahora!",
       "description": "Para mejorar la experiencia de aprendizaje, y que puedas acceder a nuestro contenido en cualquier condición",
-      "button": "Buy Now!"
+      "desktop": [
+        {
+          "image": "assets/img/windows.png",
+          "links": [{
+            "url": "https://s3.amazonaws.com/releases-desktop/MedicineHub+Setup+1.0.0.exe",
+            "text": "Descarga para Windows"
+          }]
+        },
+        {
+          "image": "assets/img/apple.png",
+          "links": [{
+            "url": "https://s3.amazonaws.com/releases-desktop/MedicineHub-1.0.0.dmg",
+            "text": "Descarga para Mac"
+          }]
+        },
+        {
+          "image": "assets/img/linux.png",
+          "links": [{
+            "url": "https://s3.amazonaws.com/releases-desktop/medicinehub-desktop_1.0.0_amd64.deb",
+            "text": "Ubuntu"
+          }, {
+            "url": "https://s3.amazonaws.com/releases-desktop/medicinehub-desktop-1.0.0-x86_64.AppImage",
+            "text": "AppImage"
+          }]
+        }
+      ],
+      "mobile": [
+        {
+          "url": "#",
+          "image": "assets/img/googleplay.png"
+        },
+        {
+          "url": "#",
+          "image": "assets/img/appstore.png"
+        }
+      ]
     },
     "contact": {
       "backgroundPhoto": "assets/img/bg-desk.jpg",
