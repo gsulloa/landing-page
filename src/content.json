@@ -13,8 +13,8 @@
           "photo": "assets/img/what.jpg"
         },
         {
-          "title": "Modelos 3D físicos y digitales",
-          "description": "Todo los modelos anatómicos presentes, cuentan con visualización en Realidad Aumentada, y presentan toda la información relevante al respecto.",
+          "title": "Modelos 3D Físicos y Digitales",
+          "description": "",
           "elements": [
             "Modelos digitales rotulados con metadatos anatómicos",
             "Maximiza tu experiencia de aprendizaje"
@@ -54,8 +54,7 @@
         "address": "Vicuña Mackena #4860",
         "addressExtra": "Macul, Santiago",
         "email": "medhub@ing.puc.cl",
-        "phone": "+1 215-606-0391",
-        "skype": "startups.agency"
+        "phone": "+56 2 2354 7550"
       },
       "form": {
         "title": "Formulario de Contacto",
@@ -84,8 +83,10 @@
     },
     "clients": {
       "logos": [
-        "assets/img/ing-uc.png",
-        "assets/img/med-uc.png"
+        "assets/img/uach.png",
+        "assets/img/pucv.png",
+        "assets/img/upla.png",
+        "assets/img/ucm.png"
       ]
     },
     "growth": {
@@ -97,7 +98,7 @@
       ]
     },
     "header": {
-      "title": "Desarrollo de instrumentos educativos que sirvan de apoyo a la enseñanza de la morfología a nivel nacional y regional",
+      "title": "Desarrollo de recursos educativos que apoyan a la enseñanza de la morfología a nivel nacional y regional",
       "subtitle": "Accede al mayor repositorio de recursos anatómicos físicos y virtuales de sudamérica. Experimenta el aprendizaje de Anatomía como nunca antes.",
       "learn": "Conoce Más",
       "video": {
@@ -174,7 +175,7 @@
     },
     "ourTeam": {
       "title": "Nuestro Equipo",
-      "description": "El valor de MedicineHub está en nuestro equipo interdisciplinario: Escuela de Ingeniería, Escuela de Médicina y Escuela de Diseño.",
+      "description": "El valor de MedicineHub está en nuestro equipo multidisciplinario: Escuela de Medicina, Ingeniería y Diseño",
       "photo": "assets/img/team.jpg",
       "members": [
         {
@@ -208,7 +209,7 @@
     },
     "pricing": {
       "backgroundPhoto": "assets/img/bg-table.jpg",
-      "title": "Algunos Productos",
+      "title": "Nuestros Productos",
       "options": [
         {
           "title": "Cortes Cara",
