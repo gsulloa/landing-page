@@ -27,13 +27,11 @@ class PricingCard extends Component {
               {title}
             </h5>
             <div className="ts-title py-5 mb-0">
-              <img src={photo} alt="" style={{height: "210px"}} />
+              <img src={photo} alt="" style={{ height: "210px" }} />
             </div>
           </div>
           <div className="card-body p-0">
-            <ul className="list-unstyled ts-list-divided">
-              <li>{price}</li>
-            </ul>
+            <ul className="list-unstyled ts-list-divided" />
           </div>
           <div className="card-footer bg-transparent pt-0 ts-border-none">
             <a href={url} className="btn btn-outline-dark ts-btn-border-muted">

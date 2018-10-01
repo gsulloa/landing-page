@@ -10,13 +10,13 @@
             "Presente en dispositivos moviles y Web",
             "Contenido autoexplicativo para mejorar la experiencia de aprendizaje"
           ],
-          "photo": "assets/img/what.png"
+          "photo": "assets/img/what.jpg"
         },
         {
-          "title": "Modelos 3D con Realidad Aumentada",
+          "title": "Modelos 3D físicos y digitales",
           "description": "Todo los modelos anatómicos presentes, cuentan con visualización en Realidad Aumentada, y presentan toda la información relevante al respecto.",
           "elements": [
-            "Usa tu smartphone para poder acceder a las mejores visualizaciones",
+            "Modelos digitales rotulados con metadatos anatómicos",
             "Maximiza tu experiencia de aprendizaje"
           ],
           "photo": "assets/img/ar.jpg"
@@ -37,8 +37,8 @@
           "icon": "assets/img/3dmodel.png"
         },
         {
-          "title": "Modelos Impresos",
-          "description": "Disponemos de Packs especiales con los recursos 3D en su versión física",
+          "title": "Modelos Físicos",
+          "description": "Packs de segmentos corporales modelados a partir de preparaciones anatómicas reales",
           "icon": "assets/img/3dprint.png"
         }
       ]
@@ -82,6 +82,12 @@
         "assets/img/fondef.png"
       ]
     },
+    "clients": {
+      "logos": [
+        "assets/img/ing-uc.png",
+        "assets/img/med-uc.png"
+      ]
+    },
     "growth": {
       "backgroundPhoto": "assets/img/bg.jpg",
       "data": [
@@ -91,8 +97,8 @@
       ]
     },
     "header": {
-      "title": "Software de apoyo a la enseñanza de Anatomía líder en sudamérica",
-      "subtitle": "Accede al mayor repositorio de recursos anatómicos en 3D y en Realidad Virtual de sudamérica. Experimenta el aprendizaje de Anatomía como nunca antes.",
+      "title": "Desarrollo de instrumentos educativos que sirvan de apoyo a la enseñanza de la morfología a nivel nacional y regional",
+      "subtitle": "Accede al mayor repositorio de recursos anatómicos físicos y virtuales de sudamérica. Experimenta el aprendizaje de Anatomía como nunca antes.",
       "learn": "Conoce Más",
       "video": {
         "button": "Video",
@@ -168,61 +174,69 @@
     },
     "ourTeam": {
       "title": "Nuestro Equipo",
+      "description": "El valor de MedicineHub está en nuestro equipo interdisciplinario: Escuela de Ingeniería, Escuela de Médicina y Escuela de Diseño.",
+      "photo": "assets/img/team.jpg",
       "members": [
         {
-          "name": "Jane Dow",
-          "occupation": "Company CEO",
-          "photo": "assets/img/person-01.jpg"
+          "name": "Oscar Inzunza",
+          "occupation": "Director",
+          "photo": "assets/img/inzunza.jpg"
         },
         {
-          "name": "Peter Daniels",
-          "occupation": "Marketing",
-          "photo": "assets/img/person-02.jpg"
+          "name": "Andrés Neyem",
+          "occupation": "Co-Director",
+          "photo": "assets/img/neyem.jpg"
         },
         {
-          "name": "Suzane Smith",
-          "occupation": "Support Team",
-          "photo": "assets/img/person-03.jpg"
+          "name": "Denise Montt",
+          "occupation": "Investigador Asociado",
+          "photo": "assets/img/montt.jpg"
+        },
+        {
+          "name": "Gabriel Salgado",
+          "occupation": "Investigador Asociado",
+          "photo": "assets/img/salgado.jpg"
+        },
+        {
+          "name": "Ivan Caro",
+          "occupation": "Investigador Asociado",
+          "photo": "assets/img/caro.jpg"
         }
+
+
       ]
     },
     "pricing": {
       "backgroundPhoto": "assets/img/bg-table.jpg",
-      "title": "Precios Accesibles",
+      "title": "Algunos Productos",
       "options": [
         {
           "title": "Cortes Cara",
-          "price": "$4.500",
           "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/cara.png",
           "url": "https://app.medicinehub.cloud/documents/315cb4a7-2145-4e8e-b20f-51928f60f6fe"
         },
         {
           "title": "Cortes Cuello",
-          "price": "$4.500",
           "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/cuello.png",
           "url": "https://app.medicinehub.cloud/documents/d00262aa-1522-434f-9d13-e1e94e0a1328"
         },
         {
           "title": "Cortes Torax-Abdomen",
-          "price": "$4.500",
           "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/torax-abdomen.png",
           "url": "https://app.medicinehub.cloud/documents/523f26e2-0245-4e79-b06f-28a0e83f135c"
         },
         {
           "title": "Cortes Antebrazo",
-          "price": "$4.500",
           "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/antebrazo.png",
           "url": "https://app.medicinehub.cloud/documents/012abadf-8ca1-45ce-a8a8-2d65dac07217"
         },
         {
           "title": "Cortes Pelvis",
-          "price": "$4.500",
           "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/pelvis.png",
           "url": "https://app.medicinehub.cloud/documents/11a02ff2-78ec-4b39-a415-abb147b39a4c"
         },
         {
           "title": "Cortes Pierna",
-          "price": "$4.500",
           "photo": "https://s3.us-east-2.amazonaws.com/medicinehub.cloud-file/pierna.png",
           "url": "https://app.medicinehub.cloud/documents/ffb5dbc1-5210-4aa6-bfa0-76d84bdf915a"
         }

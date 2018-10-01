@@ -83,7 +83,7 @@ function onChange($) {
     });
 
     $("[data-mask-bottom-nw-color]").each(function() {
-        var bgColor = $(this).attr("data-mask-top-nw-color").replace("#", "%23");
+        var bgColor = $(this).attr("data-mask-bottom-nw-color").replace("#", "%23");
         $(this).prepend(
             "<div class='ts-mask-bottom-nw'></div>"
         );

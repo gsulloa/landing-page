@@ -21,7 +21,7 @@ class OurTeam extends Component {
           <div className="ts-title">
             <h2>{title}</h2>
           </div>
-          <div className="row">
+          <div className="row justify-content-center">
             {members.map((member, i) => <Member key={i} {...member} />)}
           </div>
         </div>

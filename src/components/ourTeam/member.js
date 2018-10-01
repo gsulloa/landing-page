@@ -15,15 +15,6 @@ class Member extends Component {
           className="ts-element d-inline-block mb-4"
           data-animate="ts-fadeInLeft"
         >
-          <a
-            href="#"
-            className="ts-circle__md position-absolute ts-right__0 ts-top__0"
-            data-bg-color="#ff6a6a"
-          >
-            <div className="text-white ts-h2">
-              <i className="far fa-envelope" />
-            </div>
-          </a>
           <div
             className="ts-circle__xxl ts-shadow__md mb-4"
             data-bg-image={photo}

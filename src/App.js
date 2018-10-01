@@ -8,7 +8,7 @@ import Growth from "./components/growth"
 import AdvancedFeatures from "./components/advancedFeatures"
 import Pricing from "./components/pricing"
 import Buy from "./components/buy"
-import OurClients from "./components/ourClients"
+import Clients from "./components/clients"
 import Suscribe from "./components/suscribe"
 import Organize from "./components/organize"
 import OurTeam from "./components/ourTeam"
@@ -65,7 +65,7 @@ class App extends Component {
             <Benefits {...content.benefits} />
             <FriendLogos {...content.friendsLogos} />
 
-            <FriendLogos {...content.friendsLogos} />
+            <Clients {...content.clients} />
             <AdvancedFeatures
               ref={this.AdvancedFeatures}
               {...content.advancedFeatures}

@@ -30,7 +30,7 @@ class Pricing extends Component {
         data-bg-parallax="scroll"
         data-bg-parallax-speed="3"
         data-mask-top-nw-color="#fff"
-        data-mask-bottom-wn-color="#eaeaea"
+        data-mask-bottom-wn-color="#fff"
       >
         <div className="container">
           <div className="ts-title text-center text-white">

@@ -2439,3 +2439,8 @@ E. Template Specific Elements
 .ts-block-no-padding {
     padding: 1rem;
 }
+
+.center {
+    display: flex;
+    justify-content: center;
+}
