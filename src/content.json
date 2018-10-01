@@ -19,7 +19,7 @@
             "Modelos digitales rotulados con metadatos anatómicos",
             "Maximiza tu experiencia de aprendizaje"
           ],
-          "photo": "assets/img/ar.jpg"
+          "photo": "assets/img/models.jpg"
         }
       ]
     },
@@ -75,8 +75,8 @@
     },
     "friendsLogos": {
       "logos": [
-        "assets/img/ing-uc.png",
         "assets/img/med-uc.png",
+        "assets/img/ing-uc.png",
         "assets/img/diseno-uc.png",
         "assets/img/fondef.png"
       ]
@@ -105,7 +105,7 @@
         "button": "Video",
         "href":"https://www.youtube.com/watch?v=qpxzRZYd5d8"
       },
-      "backgroundPhoto": "assets/img/bg.png"
+      "backgroundPhoto": "assets/img/bg.jpg"
     },
     "organize": {
       "title": "Organize Everything!",
@@ -208,7 +208,7 @@
       ]
     },
     "pricing": {
-      "backgroundPhoto": "assets/img/bg-table.jpg",
+      "backgroundPhoto": "assets/img/bg-pricing.jpg",
       "title": "Nuestros Productos",
       "options": [
         {
