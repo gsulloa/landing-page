@@ -33,7 +33,7 @@ class Download extends Component {
                 <div
                   style={{
                     display: "flex",
-                    flexDirection: "row",
+                    flexFlow: "row wrap",
                     justifyContent: "space-around",
                   }}
                 >
@@ -73,7 +73,7 @@ class Download extends Component {
                 <div
                   style={{
                     display: "flex",
-                    flexDirection: "row",
+                    flexFlow: "row wrap",
                     justifyContent: "space-around",
                     alignItems: "center",
                   }}

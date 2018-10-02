@@ -27,6 +27,7 @@ class App extends Component {
     this.OurClients = createRef()
     this.OurTeam = createRef()
     this.Contact = createRef()
+    this.Download = createRef()
   }
   state = {
     loading: true,
@@ -44,6 +45,7 @@ class App extends Component {
       ourClients: this.OurClients,
       ourTeam: this.OurTeam,
       contact: this.Contact,
+      download: this.Download,
     }
   }
   render() {
@@ -72,7 +74,7 @@ class App extends Component {
             />
             <Pricing ref={this.Pricing} {...content.pricing} />
             <OurTeam ref={this.OurTeam} {...content.ourTeam} />
-            <Download {...content.download} />
+            <Download ref={this.Download} {...content.download} />
           </main>
           <footer id="ts-footer">
             <Contact ref={this.Contact} {...content.contact} />

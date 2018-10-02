@@ -50,6 +50,13 @@ class NavBar extends Component {
               <MenuItem component={navRefs.ourTeam.current} href="#our-team">
                 Equipo
               </MenuItem>
+
+              <MenuItem
+                component={navRefs.download.current}
+                href="#form-contact"
+              >
+                Descarga
+              </MenuItem>
               <MenuItem
                 component={navRefs.contact.current}
                 href="#form-contact"
