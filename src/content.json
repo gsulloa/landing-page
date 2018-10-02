@@ -9,7 +9,11 @@
         "button": "Video",
         "href":"https://www.youtube.com/watch?v=qpxzRZYd5d8"
       },
-      "backgroundPhoto": "assets/img/bg.jpg"
+      "backgroundPhotos": [
+        "assets/img/bg00.jpg",
+        "assets/img/bg01.jpg",
+        "assets/img/bg02.jpg"
+      ]
     },
     "benefits": {
       "title": "¿Qué entregamos?",

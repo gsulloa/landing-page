@@ -12,7 +12,7 @@ class Header extends Component {
       href: PropTypes.string,
       button: PropTypes.string,
     }),
-    backgroundPhoto: PropTypes.string,
+    backgroundPhotos: PropTypes.array,
     navRefs: PropTypes.object,
   }
   constructor(props) {
@@ -37,7 +37,7 @@ class Header extends Component {
     }))
   }
   render = () => {
-    const { title, subtitle, learn, video, backgroundPhoto } = this.props
+    const { title, subtitle, learn, video, backgroundPhotos } = this.props
     return (
       <header
         ref={this.header}
@@ -45,9 +45,6 @@ class Header extends Component {
         id="ts-hero"
         className="ts-separate-bg-element"
         data-mask-bottom-wn-color="#fff"
-        data-bg-image={backgroundPhoto}
-        data-bg-color="#737373"
-        data-bg-image-opacity=".5"
         data-bg-parallax="scroll"
         data-bg-parallax-speed="1"
         data-bg-size="cover"
@@ -68,6 +65,26 @@ class Header extends Component {
             <i className="fa fa-play mr-2" />
             {video.button}
           </a>
+        </div>
+        <div
+          className="ts-background"
+          data-bg-color="#737373"
+          data-bg-parallax="scroll"
+          data-bg-parallax-speed="3"
+        >
+          <div
+            className="owl-carousel ts-hero-slider ts-parallax-element"
+            data-owl-loop="1"
+            data-owl-fadeout="1"
+          >
+            {backgroundPhotos.map((backgroundPhoto, i) => (
+              <div
+                key={i}
+                className="ts-background-image ts-opacity__50"
+                data-bg-image={backgroundPhoto}
+              />
+            ))}
+          </div>
         </div>
       </header>
     )
